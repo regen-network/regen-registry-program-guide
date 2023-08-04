@@ -19,6 +19,7 @@ deemed necessary.
 
 == Definitions
 
+[horizontal]
 Approved Methodology::
 
 A methodology (or set of methodologies) that has been approved for use within Regen Registry, or more specifically, within the context of a specific Credit Class.
@@ -358,6 +359,7 @@ verification requirements stipulated in a given Credit Class.
 
 == Acronyms
 
+[horizontal]
 GHG:: Greenhouse Gasses
 IPCC:: Intergovernmental Panel on Climate Change (IPCC) is an
 intergovernmental body of the United Nations that is dedicated to
@@ -1294,44 +1296,33 @@ have informed this guide and are summarized below:
 
 [width="100%",cols="25%,75%"]
 |===
-a|
-*Relevance*
 
-a|
-Select the GHG sources, sinks and reservoirs (SSRs), data and
+| *Relevance*
+
+| Select the GHG sources, sinks and reservoirs (SSRs), data and
 methodologies appropriate to the needs of the intended user.
 
-a|
-*Completeness*
+| *Completeness*
 
-a|
-Include all relevant GHG emissions and removals. Include all relevant
+| Include all relevant GHG emissions and removals. Include all relevant
 information to support criteria and procedures.
 
-a|
-*Consistency*
+| *Consistency*
 
-a|
-Enable meaningful comparisons in GHG-related information.
+| Enable meaningful comparisons in GHG-related information.
 
-a|
-*Accuracy*
+| *Accuracy*
 
-a|
-Reduce bias and uncertainties as far as is practical.
+| Reduce bias and uncertainties as far as is practical.
 
-a|
-*Transparency*
+| *Transparency*
 
-a|
-Disclose sufficient and appropriate GHG-related information to
+| Disclose sufficient and appropriate GHG-related information to
 allow intended users to make decisions with reasonable confidence.
 
-a|
-*Conservativeness*
+| *Conservativeness*
 
-a|
-Use conservative assumptions, values, and procedures to ensure
+| Use conservative assumptions, values, and procedures to ensure
 that GHG emission reductions or removal enhancements
 are not overestimated.
 
@@ -1761,20 +1752,17 @@ the GHG benefit and their location.
 
 [width="100%",cols="24%,38%,38%",options="header",]
 |===
-a|
-Risk | Description | Mitigation
+| Risk | Description | Mitigation
 
-a| Double Issuance
+| Double Issuance
 
-a|
-1) A situation in which more than one carbon credit is issued for
+| 1) A situation in which more than one carbon credit is issued for
 the same emissions or emission reductions.
 
 2) The registration of the same project under two different
 carbon crediting programs or twice under the same program
 
-a|
-On Regen Registry, for a given location, only one project applying for
+| On Regen Registry, for a given location, only one project applying for
 any Credit Class with a GHG component, is registered and active.
 
 Project Proponent will be required to commit to not claiming credits for
@@ -1782,28 +1770,22 @@ the same land and emission reduction/removal concurrently on any other
 registry. Verifier will confirm this in the verification report prior to
 credit issuance.
 
-a|
-Double Sale
+| Double Sale
 
-a|
-An instance in which a single GHG reduction or removal is sold to more
+| An instance in which a single GHG reduction or removal is sold to more
 than one entity at a given time.
 
-a|
-Credit ownership will be tracked on Regen Ledger, leveraging blockchain
+| Credit ownership will be tracked on Regen Ledger, leveraging blockchain
 technology which prevents the possibility of double selling.
 
-a|
-Double Claiming
+| Double Claiming
 
-a|
-An instance in which an
+| An instance in which an
 issued credit is used by the same Buyer toward more than one target
 (e.g., under systems that are not linked, do not coordinate, or may have
 inconsistent rules for reporting and/or retirement).
 
-a|
-Legal contracts will restrict Buyers from making multiple claims on any
+| Legal contracts will restrict Buyers from making multiple claims on any
 given credit.
 
 Each retirement will record the exact time, location, beneficiary
