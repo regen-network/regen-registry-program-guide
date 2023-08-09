@@ -1,11 +1,9 @@
 = Regen Registry Program Guide
-Ron Steinherz; Sam Bennets; Cory Levinson; Fennie Wang
+Ron Steinherz; Sam Bennetts; Cory Levinson; Fennie Wang
 v1.1, August 3, 2023
 :description: 
-:toc:
+:toc: left
 :sectnumlevels: 3
-
-Regen Network Development, PBC
 
 [discrete]
 == Disclaimer
