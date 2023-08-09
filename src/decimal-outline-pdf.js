@@ -25,6 +25,7 @@ asciidoctor.Extensions.register(function () {
   });
 });
 
+// taking from: https://github.com/ggrossetie/asciidoctor-web-pdf/blob/0a27de7423f12fe1f8b5ff7bcb720b786fb63e5b/test/document_convert_test.js#L16-L22
 class CustomConverter {
   constructor() {
     this.baseConverter = new DocumentConverter(); // Instantiate the built-in HTML5 converter
