@@ -2,8 +2,15 @@
 Ron Steinherz; Sam Bennetts; Cory Levinson; Fennie Wang
 v1.1, August 3, 2023
 :description: 
-:toc: left
+:toc: preamble
+:sectnums: 
 :sectnumlevels: 3
+
+
+[.footer]
+--
+Regen Network Development, PBC
+--
 
 [discrete]
 == Disclaimer
