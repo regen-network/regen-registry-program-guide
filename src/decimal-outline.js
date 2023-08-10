@@ -31,7 +31,7 @@ class CustomConverter {
 
   convert(node, transform) {
     if (node.getNodeName() === "olist") {
-      return `<ol>${node
+      return `<ol class="decimal-outline">${node
         .getItems()
         .map(
           (item) =>
