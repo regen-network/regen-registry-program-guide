@@ -10,8 +10,7 @@
     "build-pdf": "asciidoctor-web-pdf program-guide.adoc -a stylesdir=stylesheets -a stylesheet=\"styles.css,pdf.css\" -r ./src/decimal-outline-pdf.js -o pdf/program-guide.pdf -b custom-web-pdf"
   },
   "dependencies": {
-    "asciidoctor": "^3.0.2",
-    "asciidoctor.js": "^1.5.9"
+    "asciidoctor": "^3.0.2"
   },
   "devDependencies": {
     "asciidoctor-pdf": "^1.0.0-alpha.16"
