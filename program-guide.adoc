@@ -585,13 +585,6 @@ academic setting.
 Methodologies approved on Regen Registry shall rely on comparable
 peer-reviewed studies as best as possible.
 
-Further, Regen Registry is building infrastructure for automated
-monitoring processes that will enable, once monitoring has been
-performed for a given project, to have an independent party run that
-same monitoring process again, at will, in order to compare the results.
-We believe this will provide a new level of transparency and assurance
-to monitoring processes.
-
 ==== Transparency
 
 Regen Registry is built to provide stakeholders, including Project
@@ -626,9 +619,9 @@ providers, surveying tools, etc. are invited to provide their monitoring
 services to streamline the costs of MRV while maintaining scientific
 rigor.
 
-Regen Registry platform and Regen Ledger development - software
-developers who are eager to mitigate climate change are welcome to
-contribute to these open source projects.
+Regen Registry System and Regen Ledger development - software developers
+who are eager to mitigate climate change are welcome to contribute to
+these open source projects.
 
 ==== Practicality
 
@@ -642,7 +635,7 @@ of credit Buyers.
 ==== Security
 
 RND will conduct security audits of major releases of its software,
-including Regen Ledger and Regen Registry, to ensure the data integrity
+including Regen Ledger and Registry System, to ensure the data integrity
 and fidelity of credit ownership and the underlying MRV data.
 
 ==== Open Source and Open Data
@@ -682,7 +675,7 @@ that includes two layers:
 interfaces for managing accounts, project pages, buy/sell functionality,
 administrative functions; and
 
-. Regen Ledger - a decentralized software layer that is used to issue,
+. Regen Registry System - a decentralized software layer that is used to issue,
 transfer, and retire credits and tracks all pertinent monitoring,
 reporting and verification (MRV) information as immutable records.
 
@@ -760,10 +753,20 @@ applicant submitting the Methodology or Credit Class can demonstrate the
 Methodology has gone through a process of similar merit to the one
 above.
 . Regen Registry must document the entire Credit Class or Methodology
-approval process for Expert Peer Review or Public Comment including
-submitted versions, responses of reviewers, comments and responses of
-the Methodology or Credit Designer, and corresponding changes made to
-each version Credit Class or Methodology at each stage.
+process for Expert Peer Review or Public Comment including submitted
+versions, responses of reviewers, comments and responses of the
+Methodology or Credit Designer, and corresponding changes made to each
+version Credit Class or Methodology at each stage.
++
+While successful completion of Expert Peer Review and Public Comment (or
+sufficient alternative) is a necessary prerequisite for approval of a
+Credit Class or Methodology for use under Regen Registry, such
+completion does not guarantee approval, as approval may also be
+contingent upon other factors to ensure credit quality. Other criteria,
+such as the appointment of adequately qualified organizations as the
+Credit Class Admin and Registry Agent, and ensuring the proposed Credit
+Class upholds the standards of integrity, also influence the final
+decision.
 
 === Modifications to an Approved Credit Class or Methodology
 
@@ -808,8 +811,8 @@ version of the Credit Class.
 === Governance of Adding and Removing Credit Classes and Methodologies to the Regen Registry
 
 Regen Registry, currently managed by RND, will govern the process of
-adding new Credit Classes and Methodologies per above process. In the
-future our aim is to move towards an independent, decentralized
+adding new Credit Classes and Methodologies per the above process. In
+the future our aim is to move towards an independent, decentralized
 governance of these Credit Classes and Methodologies by a broad set of
 stakeholders, including subject matter experts, land stewards, project
 developers, monitors, and verifiers.
@@ -841,14 +844,14 @@ Methodology Developer or Credit Designer.
 
 . For every new Methodology or Credit Class submitted to Regen Registry,
 the submitting party must explicitly declare whether their Methodology
-or Credit Class is Open Source or Open access at the time of
+or Credit Class is open source or open access at the time of
 registration. This declaration forms part of the official registration
 documentation and cannot be changed retroactively.
 
-. While all Methodology or Credit Class registered with the Regen Registry
-must be open source or open access, implementations of the Methodology
-or Credit Class by Monitors can be closed source. This means that
-Monitors may use proprietary tools or modules to implement the
+. While all Methodologies or Credit Classes registered with the Regen
+Registry must be open source or open access, implementations of the
+Methodology or Credit Class by Monitors can be closed source. This means
+that Monitors may use proprietary tools or modules to implement the
 Methodology or Credit Class, as long as they can demonstrate that their
 implementation accurately follows the Methodology or Credit Class and
 meets all other requirements of the Regen Registry Program.
@@ -1876,8 +1879,8 @@ meets the conservative standards of the methodology.
 . The Registry Agent will review each such request, and if approved,
 deviations can be applied to a specific project, but are not published
 as modifications to the methodology. Any approved deviations must be
-communicated to the Credit Class Admin, and may be overridden by the
-Credit Class Admin.
+communicated to the Credit Class Admin by the Registry Agent, and may be
+overridden by the Credit Class Admin.
 
 === Monitoring Acceptance
 
@@ -1927,7 +1930,8 @@ per the requirements stipulated in the Credit Class.
 Regen Registry seeks a balance between adequate assurances, the
 overhead, and costs associated with verification. Therefore, each Credit
 Class can stipulate the requirements that are best suited to the
-ecosystem, best management practice and/or locale(s) it pertains to.
+ecosystem, best management practice and/or locale(s) to which it
+pertains.
 
 === Verifier Requirements 
 
@@ -1979,9 +1983,9 @@ verifications.
 project inputs are authentic, using a random sampling approach whenever
 appropriate.
 
-. Verifiers are required to provide assurance as to the reasonableness and
-accuracy and validity of the data the Project Proponent has provided to
-the Registry Agent and the Monitor.
+Verifiers are required to provide assurance as to the
+reasonableness, accuracy and validity of the data the Project Proponent
+has provided to the Registry Agent and the Monitor.
 
 . The Credit Class and Approved Methodology contains specific guidance on
 the scope of evidence gathering necessary to provide reasonable
@@ -2190,9 +2194,9 @@ frameworks, both in the US and internationally.
 
 === Selling Credits 
 
-Credit holders - whether Project Proponents whom have been issued
-credits or Buyers who had purchased tradable credits - have a few
-options to sell their credits:
+Credit holders - whether Project Proponents who have been issued credits
+or Buyers who had purchased tradable credits - have a few options to
+sell their credits:
 
 - Direct / offline sale - a seller can negotiate directly with a
 prospective Buyer and offer them the credits.
@@ -2235,15 +2239,15 @@ mailto:registry@regen.network[registry@regen.network]. The complaint must detail
     ** Complainant name, contact details, and organization.
 
 Regen Registry, currently managed by RND, shall investigate the
-complaint. Regen Registry will provide a written response, via email, to
-the complainant detailing the decision on the matter.
+complaint by forming a committee of at least three staff members who
+review the complaint and determine its merits to render a decision on
+the matter.
 
 === Appeals Procedure
 
-In the event that a complaint remains unresolved after the conclusion of
-the complaints procedure, the Project Proponent or stakeholder may
-appeal any such decision or outcome reached. The following confidential
-appeals procedure shall be followed:
+In the event that a plaintiff is not satisfied with the result of a
+review they may appeal any such decision or outcome reached. The
+following confidential appeals procedure shall be followed:
 
 * Project Proponent or other stakeholder sends a written appeal via email
 to
@@ -2271,9 +2275,69 @@ by the committee shall be final.
 
 == Linkages to other Registry Systems
 
-In the event, a Project Proponent wishes to transfer a project from
+In the event a Project Proponent wishes to transfer a project from
 another GHG (or other ecosystem service) program, the project must
 adhere to all the requirements in the Program Guide, and respective
 Credit Class and Methodology. To avoid double issuance of GHG credits
 (whether removals or emission reduction) see also the requirements in
 the 'Avoiding double counting' section.
+
+== References
+
+The Program Guide is based on the foundation laid by the reference
+standards and documentation below. These assisted RND to articulate our
+own requirements and specifications for the MRV requirements, especially
+as it relates to GHG guidelines that apply to AFOLU project-based
+credits.
+
+In particular the Program Guide has been informed by these
+organizations:
+
+* American Carbon
+Registryfootnote:[https://americancarbonregistry.org/[https://americancarbonregistry.org/]]
+* The Australian Government's Emission Reduction
+Fundfootnote:[http://www.cleanenergyregulator.gov.au/ERF/[http://www.cleanenergyregulator.gov.au/ERF/]]
+* Gold
+Standardfootnote:[https://www.goldstandard.org/[https://www.goldstandard.org/]]
+* Verra
+(VCS)footnote:[https://verra.org/[https://verra.org/]]
+* GHG
+Protocolfootnote:[https://ghgprotocol.org/[https://ghgprotocol.org/]]
+* Norifootnote:[https://nori.com/[https://nori.com/]]
+
+We salute and appreciate the effort of all these organizations!
+
+This is a subset of the reference documentation used in writing this
+guide:
+
+[discrete]
+==== American Carbon Registry
+
+* https://americancarbonregistry.org/carbon-accounting/standards-methodologies/american-carbon-registry-standard/acr-standard-v6_final_july-01-2019.pdf[ACR Standard v6.0]
+
+* https://americancarbonregistry.org/carbon-accounting/guidance-tools-templates/acr-risk-tool-v1-0.pdf[ACR Risk Tool v1.0]
+
+[discrete]
+==== The Australian Government's Emission Reduction Fund
+
+* https://www.legislation.gov.au/Details/F2018L00089[Carbon Credits (Carbon Farming Initiative - Measurement of Soil Carbon Sequestration in Agricultural Systems) Methodology Determination 2018]
+
+* https://www.environment.gov.au/system/files/consultations/072b4825-ec0f-49d9-991e-42dfa1fbeae3/files/supplement-soil-carbon-agricultural-systems.pdf[The Supplement To the Carbon Credits (Carbon Farming Initiative - Measurement of Soil Carbon Sequestration in Agricultural Systems) Methodology Determination 2018]
+
+[discrete]
+==== Verra
+
+* https://verra.org/wp-content/uploads/2019/09/VCS_Program_Guide_v4.0.pdf[VCS Program Guide v4.0]
+
+[discrete]
+==== GHG Protocol
+
+
+* https://ghgprotocol.org/sites/default/files/standards/ghg_project_accounting.pdf[GHG Project Protocol]
+
+* https://ghgprotocol.org/sites/default/files/standards_supporting/LULUCF%20Guidance_1.pdf[Land Use, Land-Use Change, and Forestry (LULUCF) Guidance for GHG Project Accounting]
+
+[discrete]
+==== Nori
+
+* https://nori.com/resources/how-nori-works[Nori: How it Works]
