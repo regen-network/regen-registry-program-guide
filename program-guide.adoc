@@ -1,17 +1,15 @@
 = Regen Registry Program Guide
-Ron Steinherz; Sam Bennetts; Cory Levinson; Fennie Wang
-v1.1, August 3, 2023
+Ron Steinherz
+v1.0, December 18, 2020
 :description: 
 :toc:
-:sectnums: 
-:sectnumlevels: 3
 
 [discrete]
 == Disclaimer
 
 This document has been prepared for informational and procedural
 purposes only. Its contents are not intended to constitute legal advice.
-Regen Network Development, PBC (RND) maintains the right to amend or
+Regen Network Development, Inc (RND) maintains the right to amend or
 depart from any procedure or practice referred to in this guideline as
 deemed necessary.
 
@@ -19,357 +17,183 @@ deemed necessary.
 == Definitions
 
 [horizontal]
-Approved Methodology::
-
-A methodology (or set of methodologies) that has been approved for use within Regen Registry, or more specifically, within the context of a specific Credit Class.
-
-Aggregate Project::
-
-A project in which multiple independently managed projects at different
-sites or locations within the same geographic region are registered
-together as a single project to strategically reduce the amount of data
-required for monitoring, reporting, and verification.
-
-Baseline Scenario::
-
-The hypothetical situation that represents the state or condition of an
-ecological system (like a habitat, species population, or ecosystem
-function) that would be expected in the absence of a proposed Project
-Activity. The Baseline scenario serves as a reference point against
-which chances resulting from the Project Activity can be measured to
-determine the net impact or benefit of those efforts. A baseline can be
-static, dynamic, project specific, or based on performance standard (or
-a combination of
-those)footnote:[https://ghgprotocol.org/sites/default/files/standards/ghg_project_accounting.pdf[https://ghgprotocol.org/sites/default/files/standards/ghg_project_accounting.pdf]].
-
-Broker::
-
-An individual or organization offering brokerage services to credit
-owners.
-
-Buffer Pool::
-
-A tool to mitigate credit class or project-specific risk factors
-associated with unintentional or intentional reversal events, or
-overestimation of credits issued. Buffer pools hold credits that cannot
-be sold to buyers, and reserve credits for potential cancellation from
-the Registry System to maintain accurate carbon stock accounting.
-
-Buyer::
-
-An individual or organization that is purchasing credits from the
-registry.
-
-Cancelation::
-
-The permanent removal of an ecological credit from circulation in the
-Regen Registry System for purposes other than retirement. Reasons for
-cancellation could include reversals, non-compliance with Regen Registry
-or Credit Class standards, or migrating credits to a different registry
-system.
-
-Credit::
-
-A digital asset, representing a quantifiable unit of measurement either
-tied to ecological or social benefit resulting from the implementation
-of a Project Activity, or tied to the successful implementation of a
-Project Activity rather than an explicitly measured benefit. Credits
-within the Registry System are tracked on Regen Ledger, and can exist in
-a Tradable, Retired, or Canceled state.
-
-Credit Class::
-
-A standard or protocol for project registration and credit issuance
-corresponding to Project Activities measuring GHG removal or emission
-reduction, environmental stewardship , and/or other ecological or social
-benefits. Credit Classes define the structure, procedures, and
-requirements to register projects and issue credits under a specific
-protocol. The protocol defined in a Credit Class typically establishes
-one or more Approved Methodologies for use under said Credit Class, and
-in addition establishes programmatic rules and requirements for project
-registration and credit issuance (i.e. project eligibility criteria,
-Buffer Pool management, Verification requirements). In some cases, the
-processes for measuring, reporting, and verification of ecological and
-social benefits may be incorporated directly into a Credit Class, as
-opposed to being defined as a Methodology, independent of the
-programmatic requirements established in the Credit Class.
-+
-Credit Classes act as standalone standards or crediting protocols,
-meaning that every Credit Class registered with the Regen Registry may
-have its own designated governance and issuance structure, buffer pool
-requirements, project plan registration requirements, and set of project
-actors which act independently of other registered Credit Classes. +
-+
-Within the context of Regen Ledger (the Registry System used by Regen
-Registry), each Credit Class has:
-+
-- A governance body known as the Credit Class Admin
-- One or more Buffer Pools, set up to ensure accounting integrity of
-ecological benefits accounted for under the Credit Class
-- A set of on-chain anchored metadata defining the rules and regulations
-for this Credit Class, as well as a list of Approved Methodologies which
-may be used by projects registered in this Credit Class
-- One or more Registry Agents who manage project registration and credit
-issuance
-
-
-Credit Class Admin::
-
-An individual, organization, or group of individuals/organizations
-(private or governmental) that manages the rules and conditions
-necessary to issue credits under a Credit Class. The Credit Class Admin
-is responsible for maintaining the credit class protocol, list of
-approved methodologies, and subsequent documentation in accordance with
-the Regen Registry Program Guide. Additionally, the Credit Class Admin
-maintains the list of approved Registry Agents, maintains on-chain
-metadata for the Credit Class, and (if applicable) manages Buffer Pool
-Accounts for the Credit Class. To the extent that active management of
-the above allows, Credit Class Admins are responsible for ensuring
-integrity of all ecological claims accounted for in the Credit Class.
-+
-Credit Class Admins have sole control over the above on-chain components
-of a Credit Class, and can also transfer Credit Class Admin privileges
-to a new address at their own discretion. Credit Classes may be delisted
-from Regen Registry if a Credit Class Admin falls out of compliance with
-the Regen Registry Program Guide.
 
 Credit Designer::
 
-An individual or organization that develops a new Credit Class or
-updates an existing one.
+an individual or organization that is developing a new
+Credit Class or updating an existing one.
 
-Crediting Period::
-
-The finite length of time for which a Project Plan is valid, and during
-which a project can generate credits.
-
-Credit Vintage::
-
-The Credit Vintage refers to the year in which ecological credits were
-issued. Credit Vintages can generally refer to the year in which GHG
-emission reductions/removals or other ecological and social benefits
-occurred, however, the exact time frame might span multiple years for
-longer Reporting Periods.
-
-Issuance::
-
-Issuance is the act of recording and assigning initial ownership of
-quantified ecological outcomes and carbon offsets in the form of a
-digital asset, known as credits, on the Regen Registry System, a public
-blockchain for recording all data, information, and transaction history
-related to carbon credits and other environmentally-related assets.
-
-Land Steward::
-
-The individual or organization that is implementing a Project Activity.
-This can be a farmer, rancher, conservationist, forester, fisherman,
-etc.
-
-Land Owner::
-
-The individual or organization that holds title to the land where the
-project is occurring. This can be the Land Steward or a third party that
-rents the land to the Land Steward.
-
-Methodology::
-
-A specific set of scientifically based criteria and procedures which
-outline the process for monitoring, reporting, verification of
-ecological and social benefits and practices for a defined Project
-Activity or set of Project Activities. This can include setting project
-boundaries, determining the Baseline Scenario, quantifying net GHG
-emission reductions or removals, measuring improvements in ecosystem
-function, and specifying monitoring procedures.
 
 Methodology Developer::
 
-An individual or organization that develops a new Methodology or updates
-an existing one.
+an individual or organization that is developing
+a new Methodology or updating an existing one.
 
 Monitor::
 
-An individual or organization that is contracted to measure the benefits
-/ indicators defined in a given Credit Class based on the stipulations
-in the Approved Methodology.
-
-Monitoring::
-
-The ongoing, systematic process of collecting and analyzing data
-to track the ecological and social benefits provided by a Project
-Activity, following the guidelines of an Approved Methodology.
-
-Permanence Reversal Buffer::
-
-A dedicated Buffer Pool account that allocates a percentage of credits
-from each issuance in order to mitigate permanence related reversal
-risk, i.e. GHG removal reversal that has occurred over the permanence
-period of the project.
-
-Project Activity::
-
-The specific land management practice or conservation activity employed
-by a project to support ecological or social benefits.
-
-Project Area::
-
-The geographic area in which Project Activities are implemented.
-
-Project Boundary::
-
-The geography within which the direct and indirect environmental,
-economic, and social impacts of the project are accounted for. This
-includes the Project Area as well as areas that may be indirectly
-affected, including potential offsite changes in GHG emissions or other
-ecological impacts attributable to the project's implementation.
-
-Project Developer::
-
-the individual or organization responsible for the detailed management
-of the project. The project developer, who can be the land steward or a
-third party, handles detailed planning, design, construction and
-implementation of the project.
-
-Project Plan::
-
-The document used to apply for Project Registration under a given Credit
-Class. The Project Plan describes the Project Activity or Activities,
-demonstrates project eligibility requirements, establishes project
-boundaries, specifies project stakeholders, justifies application of the
-Credit Class and Methodology, and more.
-
-Project Proponent::
-
-The individual or organization that advocates for a project, identifies
-its requirements, and drives its initiation. The Project Proponent
-serves as the main point of contact with the Registry Agent throughout
-the course of the project and is responsible for initiating project
-registration, submission of all materials required by the Credit Class,
-Methodology, and Program Guide, and coordinating project actors. The
-Project Proponent must ensure correctness and compliance of all
-submitted documentation with the standards outlined in the Credit Class,
-Methodology, and Regen Registry Program Guide to ensure credit quality.
-The Project Proponent receives the credits upon issuance and is
-responsible for coordinating sale and distribution between project
-actors.
-+
-The individual or organization that has overall control and
-responsibility for the project. The Project Proponent serves as the
-primary liaison with the Registry Agent and is in charge of initiating
-project registration, submission of project documentation to the
-Registry Agent, ensuring correctness, completeness, and compliance
-with standards outlined in the Credit Class and Methodology to ensure
-underlying credit quality, and coordination of project actors. The
-Project Proponent receives the credits upon issuance and is
-responsible for coordinating sale and distribution to project actors.
-
-Project Start Date::
-
-The date on which the project commences and begins generating and
-accounting for GHG emission reduction or removals or other ecological
-and social benefits. The Project Start Date marks the beginning of the
-Crediting Period.
-
-Regen Registry::
-
-A systematic tool, platform, and process that functions to set community
-standards and provide frameworks to quantify, monitor, and trade
-ecological credits and other types of ecological claims. The Regen
-Registry seeks to operate by engaging the community in the process.
-Regen Registry provides the the following processes and functions:
-setting standards for methodology development and approval, maintaining
-and overseeing standard use of the Registry System by Credit Classes
-registered under the Regen Registry Program, and creating and
-maintaining frameworks for decision making processes and appeals.
-+
-The design of the Regen Registry is intended to be modular, where
-decision making is shared among stakeholders. These stakeholders can
-propose and vote on key decisions, form committees to oversee specific
-aspects of the registry process, and collectively resolve disputes or
-challenges that arise. Currently, the Regen Registry is stewarded by RND
-PBC.
-
-Registry Agent::
-
-The individual or organization appointed by the Credit Class Admin that
-operates the Registry System to register projects and/or issue credits
-under a given Credit Class. The Registry Agent is responsible for
-maintaining accurate accounting and ensuring compliance of registered
-projects, issued credits, and other ecosystem service claims as set
-forth in the Regen Registry Program Guide, Credit Class, Approved
-Methodology, and Project Plan. The Registry Agent is also responsible
-for ensuring updates made to the Registry Program, Credit Class,
-Approved Methodology and Project Plan are, if applicable, applied to
-existing projects in a way that is transparent and fair.
-
-Registry System::
-
-The technical infrastructure used to track information and claims made
-on ecological state, which may comprise of specific business logic,
-computer code and programs that execute some of the functions of the
-Regen Registry. The Regen Registry's Registry System is built on Regen
-Ledger, and supports (but not limited to) registering projects, tracking
-the issuance, ownership, transfer, and retirement (or Cancelation) of
-ecological credits, data anchoring and signing, and transparent tracking
-of decision making practices.
-
-Reporting Period::
-
-A period of time following the methodology guidelines in which
-Monitoring and Verification activities are completed.
-
-Retirement::
-
-The permanent removal of an ecological credit from circulation in the
-Registry System after it has been used or claimed.
-
-Reversal::
-
-A situation where project benefits, such as carbon removals or
-improvements in biodiversity, are unexpectedly reversed. Reversal events
-can happen due to a variety of reasons, including natural disasters,
-changes in land use, poor project management, or failure to comply with
-project protocols.
-
-Site::
-
-The location where a project implements the Project Activity or
-Activities.
-
-Validation::
-
-The systematic, independent third-party assessment of a project prior to
-registration to determine whether a project conforms to the rules and
-requirements outlined in the Regen Registry Program Guide, Credit Class,
-and Approved Methodology, and evaluates the reasonableness of
-assumptions, limitations, and methods that support claims about the
-future outcome of Project Activities.
-
-Verification::
-
-The systematic, independent, and documented assessment by a qualified
-and impartial third party of the Monitor's assertions for a specific
-Reporting Period.
+an individual or organization that is contracted to measure
+the benefits / indicators defined in a given Credit Class based on the
+stipulations in the Approved Methodology.
 
 Verifier::
 
-An individual or organization that is contracted to execute the
-verification requirements stipulated in a given Credit Class.
+an individual or organization that is contracted to execute
+the verification requirements stipulated in a given Credit Class.
+
+Broker::
+
+an individual or organization that is offering brokerage
+services to credit owners.
+
+Project Proponent::
+
+the project developer or land steward that is
+applying to register a project on the registry.
+
+Buyer::
+
+an individual or organization that is purchasing credits from
+the registry.
+
+Validator::
+
+independent operators of the nodes that secure Regen Ledger.
+
+Project Developer::
+
+the individual or organization that is in charge of
+managing the project and is the main point of contact with Regen
+Registry. The Project Developer can be the land steward or a third
+party.
+
+Land Steward::
+
+the individual or organization that is performing the
+work on the ground. This can be a farmer, rancher, conservationist,
+forester, fisherman, etc.
+
+Land Owner::
+
+the individual or organization that holds title to the land
+where the project is occurring in. This can be the Land Steward or a
+third party that rents the land to the Land Steward.
+
+Project Registration Date::
+
+the official date when a project commences.
+
+Approved Methodology::
+
+the corresponding approved methodology(s) for a
+given Credit Class.
+
+Credit Class::
+
+similar to a standard in other registries, it defines the
+structure, procedures and requirements related to a certain credit type.
+
+Project Plan::
+
+the template that each project proponent fills out in
+order to register a project on the registry.
+
+Co-Benefit::
+
+the Intergovernmental Panel on Climate Change
+(IPCC) defines co-benefits of climate change mitigation as the positive
+benefits related to the reduction of greenhouse gases. We define it more
+broadly as# a benefit that is achieved along with the main indicator
+tracked and promoted in a given credit - which need not be a reduction
+of GHG. For example, a biodiversity credit might mainly promote the
+protection of a certain species and at the same time offer co-benefits,
+such as protection of water resources.
+
+Baseline::
+
+an estimate of the measurement of a certain benefit /
+indicator tracked in a given credit had the project not been
+implemented. A baseline can be static, dynamic, project specific or
+based on performance standard (or a combination of
+those)footnote:[https://ghgprotocol.org/sites/default/files/standards/ghg_project_accounting.pdf[https://ghgprotocol.org/sites/default/files/standards/ghg_project_accounting.pdf]].
+
+Verification::
+
+a systematic, independent, and documented assessment by a
+qualified and impartial third party of the benefits' assertions for a
+specific reporting period.
+
+Supplement::
+
+an appendix to the Credit Class or Approved Methodology
+that contains stipulations related to a specific geographic locale or a
+specific case.
+
+Crediting Term::
+
+is the finite length of time for which a Project Plan
+is effective, and during which a project can generate credits.
+
+Project Activity::
+
+the applied management or conservation practice that
+a project proponent is undertaking in order to improve the benefits
+tracked in a given Credit Class.
+
+Project Initial Monitoring Date::
+
+the date when the baseline measurement
+was performed
+
+Project Page::
+
+the dedicated web page for a given project on the
+registry. It provides an overview of the project, the activities taken
+place, timeline, images, maps, documentation, and more.
+
+Permanence Reversal Buffer::
+
+a dedicated buffer account that is
+allocated a percentage of credits from each issuance in order to
+mitigate permanence related reversal risk, i.e. GHG removal reversal
+that has occurred over the permanence period of the project.
+
+Approved Activities::
+
+the set of land management or conservation
+activities that are eligible activities for a given Credit Class.
+
+Established Registries::
+
+other reputable registries in the carbon market
+that Regen Registry recognizes and accepts for certain purposes, such as
+onboarding verifiers. These registries are:
++
+[loweralpha]
+. Verrafootnote:[https://verra.org/[https://verra.org/]] -
+VCS Program , CCB Program, Jurisdictional & Nested REDD+ , SD Vista
+. Gold Standardfootnote:[https://registry.goldstandard.org/[https://registry.goldstandard.org/]]
+. American Carbon Registryfootnote:[https://americancarbonregistry.org/[https://americancarbonregistry.org/]]
+. Climate Action Reservefootnote:[http://www.climateactionreserve.org/[http://www.climateactionreserve.org/]]
+. CDMfootnote:[https://cdm.unfccc.int/index.html[https://cdm.unfccc.int/index.html]]
+. Australian Emission Reduction Fund - Carbon Farming Initiativefootnote:[http://cleanenergyregulator.gov.au/ERF/project-and-contracts-registers/project-register[http://cleanenergyregulator.gov.au/ERF/project-and-contracts-registers/project-register]]
 
 
 == Acronyms
 
+
 [horizontal]
-GHG:: Greenhouse Gasses
+GHG:: Greenhouse Gases
 IPCC:: Intergovernmental Panel on Climate Change (IPCC) is an
 intergovernmental body of the United Nations that is dedicated to
 providing the world with objective, scientific information relevant to
 understanding the scientific basis of the risk of human-induced climate
 change.
 AFOLU:: Agriculture, Forestry and Other Land Use; a category of carbon
-credit projects that are related to agriculture, forestry, and other
-land uses (e.g. conservation).
-RND PBC:: Regen Network Development, Public Benefit Corporation , the
-entity developing and operating the Regen Registry.
+credit projects that related to agriculture, forestry, and other land
+uses (e.g. conservation).
+RND:: Regen Network Development, Inc , the entity developing and
+operating Regen Registry. Also referred to in this document as Regen
+Network.
 SDG:: the United Nations' Sustainable Development Goals.
 GIS:: Geographic information system is a conceptualized
 framework that provides the ability to capture and analyze
@@ -378,15 +202,16 @@ https://en.wikipedia.org/wiki/Geographic_data_and_information[geographic
 data].
 
 :sectnums: 
+:sectnumlevels: 3
 
 == Introduction
 
-Every day, business is done while neglecting our most important
-partners: farmers, land stewards, and the Earth. The result are
-destructive global consequences like climate change, desertification,
-biodiversity loss and resource depletion that affect nearly every aspect
-of human life. The United Nations FAO estimates 33% of the
-Earth's soils are already degraded and over 90% could become degraded by
+Every day, business is done while neglecting some of our most important
+partners: Farmers and the Earth. The result are destructive global
+consequences like climate change, desertification, and resource
+depletion that affect nearly every aspect of human life. The United
+Nations FAO estimates 33% of the Earth's soils are already
+degraded and over 90% could become degraded by
 2050footnote:[FAO and ITPS, 2015; IPBES, 2018].
 
 The price tag to 'fix' these problems is estimated to be in the
@@ -394,54 +219,52 @@ trillions, paralyzing global efforts to quickly address climate change.
 There may be nothing of more critical importance today than the
 regeneration of the world's ecosystems.
 
-Land Stewards, the stewards of our global landscapes, offer one of the
-most powerful pathways for reversing climate change and unlocking a
-massive untapped market in the world: the services and products
-generated by Earth's ecosystems. Regen Registry, coupled with Regen
-Ledger, an ecological blockchain-based ledger, creates a new platform
-for Land Stewards to monetize their ecological data while receiving
-rewards for regenerative practices. By improving the understanding of
-the state of our land, oceans, and watersheds and enabling rewards for
-verified positive changes, Regen Network catalyzes the regeneration of
-our ecosystems.
+Farmers, the stewards of our global landscapes, offer one of the most
+powerful pathways for reversing climate change and unlocking a massive
+untapped market in the world: the services and products generated by
+Earth's ecosystems. Regen Registry coupled with Regen Ledger, an
+ecological blockchain-based ledger, create a new platform for farmers to
+monetize their ecological data while receiving rewards for sustainable
+practices. By improving the understanding of the state of our land,
+oceans, and watersheds and enabling rewards for verified positive
+changes, Regen Network catalyzes the regeneration of our ecosystems.
 
-Regen Network Development, PBC was launched in Q2, 2018 and is
-headquartered in Great Barrington, Massachusetts. The mainnet blockchain
-of Regen Ledger was launched in April 2021.
+Regen Network was launched in Q2, 2018 and is headquartered in Great
+Barrington, Massachusetts.
 
 == Overview
 
-The Regen Registry Program Guide details the general requirements and
-specifications for the quantification, monitoring, reporting and
-verification (MRV), project registration, and issuance of credits on
-Regen Registry. The common characteristic of all Regen Registry credits
-is that they are all nature-based solutions, and each can provide one or
-more ecosystem services, including GHG emissions reductions and
-removals, biodiversity/habitat protection, improvement in water quality,
-and morefootnote:[Note, the taxonomy of carbon markets and climate
+The Program Guide details the general requirements and specifications
+for the quantification, monitoring, reporting and verification (MRV),
+project registration, and issuance of credits on Regen Registry. The
+common characteristic of all Regen Registry credits is that they are all
+nature-based solutions, and each can provide one or more ecosystem
+services, including GHG emissions reductions and removals,
+biodiversity/habitat protection, improvement in water quality, and
+morefootnote:[Note, the taxonomy of carbon markets and climate
 mitigation varies from ecosystem services].
 
-The Program Guide establishes the requirements for the use of Regen
-Registry, including the development and use of credit classes and
-methodologies, the project registration process, project eligibility,
-and the issuance of tradable environmental assets to projects. This
-guide is intended to be used by Credit Designers, Methodology
-Developers, Credit Class Admins, Registry Agents, Project Proponents,
-Buyers, Monitors, Verifiers, and all other stakeholders.
+The Program Guide establishes the programmatic structure of Regen
+Registry, including credit classes and methodologies, the project
+registration process, project eligibility, and the issuance of tradable
+environmental assets to projects. This guide is intended to be used by
+Project Proponents, buyers, Monitors, Verifiers, and all other
+stakeholders.
 
 Regen Registry aims to maximize flexibility and usability for Project
 Proponents while maintaining the environmental integrity and scientific
 rigor necessary to ensure that projects developed against its credit
 classes and methodologies are of the highest quality.
 
-Project Proponents developing a project for registration to a Credit
-Class on Regen Registry shall follow this Program Guide and must apply
-directly to a Credit Class's Registry Agent to enroll their project.
+Project Proponents developing a project for registration on Regen
+Registry shall follow this Program Guide and must apply a Regen Registry
+approved credit class and methodology.
 
 Project Proponents and other interested stakeholders should refer to the
-https://registry.regen.network/v/regen-registry-handbook/[Regen
-Registry Handbook] for the latest version of the Program Guide, Credit
-Classes, Approved Methodologies, document templates, and other guidance.
+Regen Registry website for the latest version of the Program Guide,
+methodologies, document templates, and other guidance. Regen Registry
+will inform Project Proponents with active projects directly to avoid
+any potential disruptions.
 
 == Basics
 
