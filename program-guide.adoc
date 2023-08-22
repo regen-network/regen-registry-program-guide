@@ -915,10 +915,10 @@ any GHG sinks, sources, and reservoirs, or other ecological indicators.
 === Project Ownership
 
 . The Project Proponent shall stipulate the ownership of credits issued to
-the project. Regen Registry supports fractional ownership of the credits
-allocated to a project in a given issuance event, therefore credits can
-be split between Land Stewards, Land Owners, Project Developers, and
-Buyers.
+the project in the Project Plan. Regen Registry supports fractional
+ownership of the credits allocated to a project in a given issuance
+event, therefore credits can be split between Land Stewards, Land
+Owners, Project Developers, and Buyers.
 
 === Project Start Date
 
@@ -947,7 +947,7 @@ to all laws, regulations, and other legally binding mandates directly
 related to Project Activities.
 
 . Project Proponent is required to provide a regulatory compliance
-attestation for the project(s) in the project plan. This attestation
+attestation for the project(s) in the Project Plan. This attestation
 must disclose all relevant laws, regulations, or other legally binding
 mandates directly related to Project Activities and indicate (if
 applicable) where Project Activities violate compliance.
@@ -1017,13 +1017,13 @@ above if planning to register on another registry concurrently.
 
 ====  No Net Harm
 
-. The Project Proponent shall detail and potential negative socio-economic
+. The Project Proponent shall detail any potential negative socio-economic
 and environmental impacts of the project and the steps taken to mitigate
 them. This includes risks of project implementation to local
 stakeholders, how risks are mitigated and plans to protect local
-stakeholder property rights Include process for conflict resolution
-between project proponent and local stakeholders, such as grievance
-redress.
+stakeholder property rights. This also includes detailing the process
+for conflict resolution between Project Proponent and local
+stakeholders, such as grievance redress.
 
 ====  Local Stakeholder Consultation
 
@@ -1032,8 +1032,8 @@ identified and consulted prior to the project implementation.
 
 ====  Environmental Impact
 
-. The Project Proponent must indicate if environmental impact assessments were
-undertaken and describe the process and findings.
+. The Project Proponent must indicate if environmental impact assessments
+were undertaken and describe the process and findings.
 
 ====  Public Comment
 
@@ -1409,11 +1409,11 @@ with imprecise language, and in many cases subject to
 interpretation.footnote:[https://ghginstitute.org/wp-content/uploads/2015/04/AdditionalityPaper_Part-1ver3FINAL.pdf[https://ghginstitute.org/wp-content/uploads/2015/04/AdditionalityPaper_Part-1ver3FINAL.pdf]]
 
 Greenhouse Gas Protocol Initiative, a multi-stakeholder partnership of
-businesses, NGOs, governments, and academics convened by the World Business Council
-for Sustainable Development (WBCSD) and the World Resources Institute
-(WRI), does not require demonstration of additionality, but instead
-recommends incorporating it as an implicit part of the procedures used
-to estimate baseline
+businesses, NGOs, governments, and academics convened by the World
+Business Council for Sustainable Development (WBCSD) and the World
+Resources Institute (WRI), does not require demonstration of
+additionality, but instead recommends incorporating it as an implicit
+part of the procedures used to estimate baseline
 emissionsfootnote:[https://ghgprotocol.org/sites/default/files/standards/ghg_project_accounting.pdf[https://ghgprotocol.org/sites/default/files/standards/ghg_project_accounting.pdf]].
 Depending on the methodology, as appropriate for each context, this may
 be either a performance-based approach or a project-based approach,
@@ -1444,7 +1444,7 @@ In GHG accounting, permanence refers to the risk that a carbon reservoir
 may be subject to gradual long-term or sudden disruptive release that
 will reverse the benefit that occurred as a result of project
 implementation. GHG emissions reductions from terrestrial sources and
-sinks may not be permanent if a project has exposure to risk factors
+sinks may not be permanent if a project has exposure to risk factors,
 such as intentional or unintentional events that result in emissions
 into the atmosphere of sequestered CO2e for which offset credits were
 issued. Terrestrial projects have the potential for GHG removals to be
@@ -1499,9 +1499,9 @@ tool to mitigate the general and project-specific risk factors,
 including the overall uncertainty risk in GHG estimations (on top of the
 portion accounted for already by the Approved Methodology). Buffer pool
 contributions shall be decided at the Credit Class level, and designed
-and implemented by Credit Class Administrators. While Buffer Pools are
-primarily used in GHG emission reduction and removal projects, they can
-be applied to any type of ecological crediting program.
+and implemented by Credit Class Admins. While Buffer Pools are primarily
+used in GHG emission reduction and removal projects, they can be applied
+to any type of ecological crediting program.
 
 ==== Types of Buffer Pools 
 
@@ -1521,10 +1521,11 @@ period, or project termination as specified below.
 Project Specific Buffer Pools are those set up by individual projects
 and used to cover reversal events for a specific project.
 
-. Credit Class may require each project to have a Project Specific Buffer
-Pool in addition to a Credit Class Buffer to cover reversal events for a
-specific project. Project Specific Buffers must be managed by the Credit
-Class Admin, who shall have sole operational management and control.
+. Credit Classes may require each project to have a Project Specific
+Buffer Pool in addition to a Credit Class Buffer to cover reversal
+events for a specific project. Project Specific Buffers must be managed
+by the Credit Class Admin, who shall have sole operational management
+and control.
 
 . If a Credit Class does not require a Project Specific Buffer Pool,
 Project Proponents may still choose to set one up.
@@ -2275,7 +2276,7 @@ by the committee shall be final.
 
 == Linkages to other Registry Systems
 
-In the event a Project Proponent wishes to transfer a project from
+In the event that a Project Proponent wishes to transfer a project from
 another GHG (or other ecosystem service) program, the project must
 adhere to all the requirements in the Program Guide, and respective
 Credit Class and Methodology. To avoid double issuance of GHG credits
