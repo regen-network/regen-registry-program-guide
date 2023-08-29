@@ -1,0 +1,20 @@
+{
+  "name": "regen-registry-program-guide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:regen-network/regen-registry-program-guide.git",
+  "author": "Cory Levinson <cjlevinson@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "asciidoctor program-guide.adoc -a stylesdir=stylesheets -a stylesheet=web.css -r ./src/decimal-outline.js -o build/index.html -a toc=left && cp stylesheets/styles.css build",
+    "build-pdf": "asciidoctor-web-pdf program-guide.adoc -a stylesdir=stylesheets -a stylesheet=\"+styles.css,pdf.css\" -r ./src/decimal-outline-pdf.js -o pdf/program-guide.pdf -b custom-web-pdf -a toclevels=1 -d book"
+  },
+  "dependencies": {
+    "asciidoctor": "^3.0.2",
+    "asciidoctor.js": "^1.5.9",
+    "global": "^4.4.0"
+  },
+  "devDependencies": {
+    "asciidoctor-pdf": "^1.0.0-alpha.16"
+  }
+}

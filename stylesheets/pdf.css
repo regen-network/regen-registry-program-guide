@@ -1,0 +1,24 @@
+@page {
+  margin: 1.5cm 2cm 1.5cm 1.5cm;
+}
+
+#cover h1 {
+  color: #0e8333;
+}
+
+#cover h2 {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+#cover h3 {
+  color: #999;
+  font-size: 1.1rem;
+  font-weight: 200;
+  padding: 0;
+  margin: 0;
+}
+
+.hdlist > table {
+  break-inside: auto;
+}

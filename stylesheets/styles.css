@@ -1,0 +1,26 @@
+.decimal-outline {
+  list-style-type: none;
+  padding-left: 3em; /* Adjust this value as needed */
+}
+
+li[data-custom-number] {
+  position: relative;
+}
+
+li[data-custom-number]::before {
+  content: attr(data-custom-number) ". ";
+  position: absolute;
+  right: calc(100% + 0.5rem);
+  white-space: nowrap;
+}
+
+h1,
+h2,
+h3,
+#toctitle,
+.sidebarblock > .content > .title,
+h4,
+h5,
+h6 {
+  color: #0f9000;
+}
