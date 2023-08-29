@@ -268,56 +268,45 @@ any potential disruptions.
 
 == Basics
 
-=== Regen Registry Description
+=== Description
 
-Regen Registry is an open source ecosystem service registry which
-provides a tool, platform, and process that functions to set community
-standards and provide frameworks to quantify, monitor, and trade
-ecological credits and other types of ecological claims. The Regen
-Registry is a community defined project which operates in a manner
-similar to how open-source frameworks are developed. The processes and
-functions provided by the Regen Registry include setting standards for
-methodology development and approval, maintaining and overseeing
-standard use of the Registry System by Credit Classes registered under
-the Regen Registry Program, and creating and maintaining frameworks for
-decision making processes and appeals.
-
-The design of the Regen Registry is intended to be modular, where
-community decision making is shared among stakeholders. These
-stakeholderscan propose and vote on key decisions, form committees to
-oversee specific aspects of the registry process, and collectively
-resolve disputes or challenges that arise. Currently, the Regen Registry
-is stewarded by RND PBC.
+Regen Registry is an open source ecosystem services registry in which
+Project Proponents can register projects, apply for credits, and
+transfer and sell credits to buyers. Buyers can resell or retire credits
+(in the case of carbon credits). Each credit vintage issued has a unique
+ID, is project-based, is geospatially tagged and independently
+verifiedfootnote:[If an independent verification is required by the
+respective Credit Class].
 
 Regen Registry aims to provide an open source, vertically integrated
-solution consisting of:
+solution that provides:
 
 [loweralpha]
-. **Registry System** - technical infrastructure used to track information and
-claims made on ecological state, which may comprise of specific business
-logic, computer code and programs that execute some of the functions of
-the Regen Registry. The Regen Registry's Registry System is built on
-Regen Ledger, and supports (but not limited to) registering projects,
-tracking the issuance, ownership, transfer, and retirement (or
-Cancelation) of ecological credits, data anchoring and signing, and
-transparent tracking decision making practices.
-. **Marketing Platform** - showcases the unique story of each project,
-highlighting the land stewards, the impact on the land and environment;
-provides Buyers and policy makers with impact analytics on a portfolio
-(regional, national, and global) of key ecological indicators.
-. **Marketplace and Exchange (Trading Platform)** - sellers offer their
-credits for sale; Buyers purchase from one or multiple projects and
-build a portfolio; the system provides a clearing and settlement
-infrastructure including payments and billing.
+. **Digital MRV** - software infrastructure that provides monitoring
+tools - through in-house remote sensing and interoperability with 3rd
+party tools - that streamline the cost and issuance of credits.
+. **Marketing Platform** - showcases the unique story of each
+project, highlighting the land stewards, the impact on the land and
+environment; provides buyers and policy makers with impact analytics on
+a portfolio (regional, national, and global) of key ecological
+indicators.
+. **Marketplace and exchange (trading platform)** - sellers offer
+their credits for sale; buyers purchase from one or multiple projects
+and build a portfolio; the system provides a clearing [.mark]#and
+settlement infrastructure including# payments and billing.
+. **Regen Ledger** - a custom-built ecological ledger using
+blockchain technology where credits are issued and transferred, and
+monitoring and verification claims are recorded as immutable records.
+
 Each layer offered within the Regen Registry is standalone and Project
 Proponents can choose which ones to use. For example, a Project
-Proponent can choose to use the Registry System to track project
-registration and credit issuance, but use a third-party marketplace to
-list and sell credits. That said, integrated use of all layers will
-enable significant advantages in ease-of-use, effectiveness, and cost
+Proponent can choose to perform the monitoring in-house, based on the
+methodology guidelines, rather than use a Monitor that leverages our
+software stack. That said, integrated use of all layers will enable
+significant advantages in ease-of-use, effectiveness, and cost
 efficiency.
 
-=== Regen Registry Objectives 
+=== Objectives 
 
 Regen Registry's objectives are to:
 
@@ -326,8 +315,8 @@ regenerative agriculture, conservation, and best management practices,
 as a strategy to mitigate (by removing/reducing GHG emissions) and/or
 adapt to climate change.
 
-- Provide guidance forand promotescientifically rigorous methodologies and
-credit classes to foster high quality ecological assets.
+- Provide guidance for, and promote, scientifically rigorous methodologies
+and credit classes to foster high quality ecological assets.
 
 - Create an open-source infrastructure that allows cost-effective and
 rigorous MRV implementation, issues and tracks credits while avoiding
@@ -344,7 +333,7 @@ co-benefits and ecosystem services.
 will inform voluntary and regulated markets.
 
 - Incorporate cutting-edge technologies, such as IoT sensors, satellite
-remote sensing, and digital signatures in the use of project monitoring
+remote sensing, and digital signatures, in the use of project monitoring
 and verification.
 
 - Enhance public confidence in market-based action for GHG removal and
@@ -359,41 +348,93 @@ UNFCCC's Paris Agreement and global NDC commitments.
 
 . Regen Registry accepts projects from locations worldwide, provided they conform to an approved credit class and its respective methodology.
 
-==== Project Activities
+==== Project Types
 
-Regen Registry was developed to be a catalyst for ecosystem regeneration
-around the globe using blockchain, decentralized finance, and other Web
-3.0 tools. To accomplish this, we are developing innovative ways to
-financially support people working to improve and maintain ecosystem
-health through the use of nature-based solutions (NbS). We follow a
-definition of NbS that is similar to the International Union for
-Conservation of Nature (IUCN) definition but we replace _"sustainably"_
-with “_regeneratively_” to define NbS as:
+Regen Registry encourages and accepts a broad variety of nature-based
+projects that promote climate mitigation, adaptation, and regeneration
+of ecosystems, such as:
 
-[.text-center]
-_“actions to protect, [regeneratively] manage and restore natural or
-modified ecosystems that address societal challenges effectively and
-adaptively, simultaneously providing human well-being and biodiversity
-benefits”_.
+- *Agricultural projects* - examples include the adoption of cropland
+practices that sequester carbon, such as reduced tillage or planting
+cover crops, or pastureland / rangeland practices, such as rotational
+grazing.
 
-This definition includes, but is not limited to, projects reducing
-negative direct impacts that humans have on ecosystem function,
-improving climate adaptation, and reducing global warming. Examples of
-projects that we support will be reflected in our growing list of
-methodologies and projects.
+- *Water management projects* - examples include the installation of swales
+that reduce nutrient runoff.
 
-. Regen Registry accepts any projects using nature-based solutions as defined above.
+- *Forestry projects* - examples include afforestation, reforestation, and
+agroforestry projects.
 
-==== Data Submission and Record Keeping
+==== Users
 
-. Regen Registry provides a Registry System which can be used to track 
-information and claims made on ecological state, which may comprise of 
-specific business logic, computer code and programs that execute some of
-the functions of the Regen Registry. The Regen Registry's Registry
-System is built on Regen Ledger, and supports (but not limited to)
-registering projects, tracking the issuance, ownership, transfer, and
-retirement (or Cancelation) of ecological credits, data anchoring and
-signing, and transparent tracking decision making practices.
+The following depicts the main users of Regen Registry:
+
+- *Credit Designer* - an individual or organization that is developing a new
+Credit Class or updating an existing Credit Class.
+
+- *Methodology Developer* - an individual or organization that is developing
+a new Methodology or updating an existing Methodology.
+
+- *Monitor* - an individual or organization that is contracted to measure
+the benefits / indicators defined in a given Credit Class, based on the
+requirements of an Approved Methodology.
+
+- *Verifier* - an individual or organization that is contracted to execute
+the verification requirements of a given Credit Class.
+
+- *Broker* - an individual or organization that offers brokerage services to
+credit owners.
+
+- *Project Proponent* - the project developer or land steward that applies
+to register a project on the registry.
+
+- *Project Developer* - the individual or organization that manages a
+registered project and is the main point of contact with Regen Registry.
+The Project Developer can be the land steward or a third-party.
+
+- *Land Steward* - the individual or organization that performs the work
+on-the-ground. This can be a farmer, rancher, conservationist, forester,
+fisherman, etc.
+
+- *Land Owner* - the individual or organization that holds title to the land
+where the project is occurring. This can be the Land Steward or a
+third-party that rents the land to the Land Steward.
+
+- *Buyer* - an individual or organization that is purchasing credits from
+the Regen Registry.
+
+==== Adoption and Revisions
+
+Regen Registry aims to update the Program Guide on a yearly basis in
+order to accommodate changes in science and technology which inform
+new/upgraded methodologies, and changes in climate markets including GHG
+accounting best practices, legislative and/or regulatory requirements.
+
+On a project level and in certain circumstances, Regen Registry may
+require all projects, including those monitored and verified under a
+previous version of the Program Guide, to implement a policy or process
+revision (e.g., updated administrative reporting procedures) detailed in
+a subsequent version of the Program Guide.
+
+New/subsequent versions of the Program Guide will be posted for public
+comment for 30 days prior to adoption. Regen Registry will prepare
+responses to submitted comments and post the comments and responses
+along with the new version of the Program Guide.
+
+==== Data Submission and Record-Keeping
+
+Where appropriate, Regen Registry will provide templates for Project
+Proponents to collect and submit data for project registration,
+monitoring, and verification. These templates will be updated as needed.
+In the future, templates will migrate to online/digital interfaces,
+including digital signatures that simplify data collection and
+processing, enable interoperability with 3rd party tools, and provide a
+digital audit trail.
+
+==== Conflict of Interest
+
+Regen Registry requires that third-party Monitors and Verifiers sign a
+Conflict of Interest agreement.
 
 === Guiding Principles 
 
@@ -405,7 +446,9 @@ other applicable ecological indicator, such as species habitat, tree
 coverage, etc.
 
 Methodologies submitted for Regen Registry approval shall include
-methods for estimating the uncertainty for each indicator.
+methods for estimating the uncertainty for each indicator. If
+the width of the 90% confidence interval exceeds 20%, an appropriate
+confidence deduction shall be applied.
 
 The use of models, such as biogeochemical models, must include an
 estimate of structural uncertainty related to the inadequacy of the
@@ -426,6 +469,12 @@ performed for a given project, to have an independent party run that
 same monitoring process again, at will, in order to compare the results.
 We believe this will provide a new level of transparency and assurance
 to monitoring processes.
+
+==== Continuously and Frequently Upgraded
+
+Regen Registry encourages updates of the Program Guide, Credit Classes,
+and Methodologies in order to incorporate the latest scientific
+knowledge, technologies, and tools, such as IoT and remote sensing.
 
 ==== Transparency
 
@@ -451,34 +500,42 @@ See also the GHG Accounting and Policies section.
 Regen Registry believes deeply in collaboration. We are convening a
 broad set of independent parties to participate in:
 
-Methodology development and Credit Class design - scientists, economists
+- *Methodology development and Credit Class design* - scientists, economists
 and subject matter experts are invited to create new, cutting-edge
 ecological assets, to provide feedback, and to govern the library of
 methodologies and credit classes.
 
-Monitoring and verification - remote sensing companies, experts, IoT
+- *Monitoring and verification* - remote sensing companies, experts, IoT
 providers, surveying tools, etc. are invited to provide their monitoring
 services to streamline the costs of MRV while maintaining scientific
 rigor.
 
-Regen Registry platform and Regen Ledger development - software
+- *Regen Registry platform and Regen Ledger development* - software
 developers who are eager to mitigate climate change are welcome to
 contribute to these open source projects.
+
+To that end, RND is also an active member
+OpenTEAMfootnote:[https://openteam.community/], or Open Technology
+Ecosystem for Agricultural Management, a farmer-driven, interoperable
+platform to provide farmers around the world with the best possible
+knowledge to improve soil health. We are currently collaborating with
+OpenTEAM members in creating digital, open source, and standardized data
+collection from the field and from MRV providers.
 
 ==== Practicality
 
 Regen Registry aims to balance the time and cost required by Project
 Proponents to collect data for monitoring, verification and reporting
-and the need for assurances from credit Buyers. To that end, Regen
-Registry encourages an adaptive approach to methodology development that
+and the need for assurances from Credit Buyers. To that end, Regen
+Registry encourages a tiered approach to methodology development that
 will provide different levels of assurances to cater to different needs
-of credit Buyers.
+of Credit Buyers.
 
 ==== Security
 
-RND will conduct security audits of major releases of its software,
-including Regen Ledger and Regen Registry, to ensure the data integrity
-and fidelity of credit ownership and the underlying MRV data.
+RND will conduct security audits of its software, including Regen Ledger
+and Regen Registry, to ensure the data integrity and fidelity of credit
+ownership and the underlying MRV data.
 
 ==== Open Source and Open Data
 
@@ -488,7 +545,7 @@ to achieve the best results, provide transparency, ensure fair
 governance, and invite collaboration from multiple stakeholders, we need
 to develop open source software and share our research data openly. Our
 software code repositories are available on
-GitHubfootnote:[https://github.com/regen-network/[https://github.com/regen-network/]].
+GitHubfootnote:[https://github.com/regen-network/[https://github.com/regen-network/]]
 
 ==== User-Centric Design
 
@@ -505,23 +562,23 @@ buyers but also land stewards and project developers.
 
 Regen Registry is built on the principles of openness, collaboration,
 accountability, user centric design, transparency, responsiveness, and
-participation. This is applied to Credit Class administration and
-Methodology design, provision of monitoring and verification services,
-integration with other registries, and with 3rd-party service providers.
+participation. This is applied to Credit Class and Methodology design,
+provision of monitoring and verification services, integration with
+other registries, and with 3rd-party service providers.
 
-Credits issued under Regen Registry rely on a software implementation
-that includes two layers:
+Regen Registry relies on a software implementation that includes two
+layers:
 
 [loweralpha]
-. Regen Marketplace - a centralized software layer that provides user
-interfaces for managing accounts, project pages, buy/sell functionality,
-administrative functions; and
+. Regen Registry platform - a centralized software layer that
+provides user accounts, project pages, administrative functions and
 
-. Regen Ledger - a decentralized software layer that is used to issue,
-transfer, and retire credits and tracks all pertinent monitoring,
+. Regen Ledgerfootnote:[Integration of Regen Registry and Regen Ledger is
+targeted for Q2 2021] - a decentralized software layer that is used to
+issue, transfer, and retire credits and tracks all pertinent monitoring,
 reporting and verification (MRV) information as immutable records.
 
-Regen Registry is operated by Regen Network Development, PBC (RND), a
+Regen Registry is operated by Regen Network Development, Inc (RND), a
 private for-profit company. Regen Ledger is a public decentralized
 ledger that is not owned by a single entity (including RND) and is a
 Digital
@@ -536,241 +593,105 @@ ecosystems (see blog
 postfootnote:[https://medium.com/regen-network/community-stake-governance-model-b949bcb1eca3[https://medium.com/regen-network/community-stake-governance-model-b949bcb1eca3]]
 for more details).
 
-Regen Registry is committed to fully complying with all relevant U.S.
+Regen Registry is committed to fully comply with all relevant U.S.
 Commodity Futures Trading Commission (CFTC) and the U.S. Securities and
-Exchange Commission (SEC) standards and other applicable regulations.
+Exchange Commission (SEC) standards and regulations.
 
 In the event that RND dissolves, the Regen Registry's contractual
-agreements bind both Registry Agents and Project Proponents and buyers
-to uphold any outstanding contractual commitments.
+agreements bind both project developers and buyers to uphold any
+outstanding contractual commitments as if the two slides are direct
+parties to the contracts.
 
-== Credit Classes and Methodologies
+== Project eligiblity
 
-Regen Registry aims to democratize and invigorate the design of
-ecological credits. To that end we are separating out the typical set of
-definitions that are part and parcel of most registry standards and
-allow Credit and Methodology Designers to modify and upgrade these as
-needed and appropriate. These include:
+=== Ecosystem Type 
 
+Each Credit Class and Methodology shall stipulate the Ecosystem Type
+based on RND
+taxonomyfootnote:[https://docs.google.com/spreadsheets/d/1_i9aKoC-sgaRgNAIa8QL4P-ZgmmamdPjsihEHEzpCys/edit?usp=sharing[RND
+Taxonomy Document]]. In the event there is no matching definition in
+the taxonomy, the Credit Designer or Methodology Developer will propose
+an addition to the taxonomy.
 
-- Credit definition
-- Project eligibility requirements
-- GHG accounting related requirements including permanence, leakage and
-additionality.
-- Verification requirements
-- Reporting and compliance requirements
+=== Ecosystem Service Classification
 
-The Regen Registry Program Guide and the Credit Class templates provide
-the guidelines for creating new credits, thus enabling innovation while
-maintaining a high standard of rigor.
+Each Credit Class and Methodology shall stipulate the Ecosystem Service
+based on RND
+taxonomyfootnote:[https://docs.google.com/spreadsheets/d/1_i9aKoC-sgaRgNAIa8QL4P-ZgmmamdPjsihEHEzpCys/edit?usp=sharing[RND
+Taxonomy Document]]. In the event there is no matching definition in
+the taxonomy, the Credit Designer or Methodology Developer will propose
+an addition to the taxonomy.
 
-While a subset of Credit Classes might be developed by RND, the
-intention is to build a vibrant community of Credit Designers that will
-take the lead going forward.
+=== Land Ownership Type
 
-Regen Registry aims to steward a broad set of Credit Classes that cover
-different ecosystems, geographical regions and localities, and are
-tailored for different stakeholders (e.g. smallholder farmers, corporate
-farms, indigenous communities, conservation organizations, etc).
+Each Credit Class shall stipulate the land ownership type accepted, for
+example:
 
-One of our key assumptions is that creating a one-size-fits-all solution
-is suboptimal and does not tap into collective potential. Ecological
-systems are inherently complex. Regenerative farming, grazing ,and
-conservation are complex, nuanced, and locale specific. Similarly, the
-needs and risk profile of credit buyers vary substantially depending on
-the size of the company, its sector, climate goals, etc. As such, we
-believe a successful solution needs to leverage commonalities and best
-practices, while simultaneously allowing for flexibility in design.
+- Private
+- Public
+- Tribal
 
-=== New Credit Classes and Methodologies 
+Or combination of the above.
 
+=== Adoption Date
 
-. All new Credit Classes and Methodologies must go through an Expert Peer
-Review and Public Comment process The requirements for Expert Peer
-Review and Public Comment are outlined in the
-https://registry.regen.network/v/regen-registry-handbook[Regen Registry Handbook].
-. Regen Registry may grandfather in new Methodologies or Credit Classes
-into the Regen Registry Methodology Library from another Registry if the
-applicant submitting the Methodology or Credit Class can demonstrate the
-Methodology has gone through a process of similar merit to the one
-above.
-. Regen Registry must document the entire Credit Class or Methodology
-approval process for Expert Peer Review or Public Comment including
-submitted versions, responses of reviewers, comments and responses of
-the Methodology or Credit Designer, and corresponding changes made to
-each version Credit Class or Methodology at each stage.
+The Adoption Date is the date on which the Project Proponent began to
+apply the Project Activity intended to increase a certain ecological
+outcome (e.g. carbon stock) relative to the baseline measurement.
 
-=== Modifications to an Approved Credit Class or Methodology
+Each Credit Class shall define the earliest Adoption Date accepted for
+that credit, but no earlier than 10 years prior to Project Registration
+Date.
 
-==== Proposed Modifications to Approved Credit Classes and Methodologies
+The Project Proponent must provide evidence to that effect.
 
-. Credit Class Admins may propose modifications to an existing approved
-Credit Class or Methodology where they maintain the guidelines
-stipulated in the Regen Registry Program Guide. Credit Class and/or
-Methodology modifications may be submitted for review to Regen Registry.
-. Regen Registry, currently managed by RND, will review the extent of the
-modification and determine what steps in the approval process outlined
-in Section 5.1 are required to approve modifications.
-. If changes to Credit Class or Methodology are approved by the Regen
-Registry, Credit Class Admins are required to indicate the changes made
-to the Credit Class or Methodology and release the updated document as
-an updated version.
-. Upon releasing an updated version of a Credit Class or Methodology,
-Credit Class Admins are compelled to specify whether the updated version
-necessitates enforcement/updates for pre-existing projects registered
-under the same Credit Class. If such enforcement is required, Admins
-must supply a comprehensive justification detailing the reasons behind
-the implementation of these changes.
+=== Crediting Term
 
-==== Credit Class and Methodology Update Requirements for Existing Projects
+Crediting Term is the finite length of time for which a Project Plan is
+valid, and during which a project can generate credits.
 
-. If a new version of a Credit Class or Methodology is released, the
-Registry Agent must inform the Project Proponent of any updates made to
-the Credit Class or Methodology and indicate if changes are to be made
-to the project.
-. Project Proponents are required to implement changes to the best of
-their ability.
-. If a Project Proponent is unable to implement changes for an updated
-version of a Credit Class or Methodology, they must submit an
-application for variance to the Credit Class Admin to remain under a
-previous Credit Class or Methodology version. Applications for variance
-must state why the Project Proponent is unable to implement the new
-changes under the new version of the Credit Class. Such applications
-must be approved by the Credit Class Admin. Projects with approved
-applications for variance shall be denoted as issued under the previous
-version of the Credit Class.
+Each Credit Class shall define the corresponding Crediting Term(s)
+available for that credit.
 
-=== Governance of Adding and Removing Credit Classes and Methodologies to the Regen Registry
+=== GHG Removal/Emission Reduction Requirements
 
-Regen Registry, currently managed by RND, will govern the process of
-adding new Credit Classes and Methodologies per above process. In the
-future our aim is to move towards an independent, decentralized
-governance of these Credit Classes and Methodologies by a broad set of
-stakeholders, including subject matter experts, land stewards, project
-developers, monitors, and verifiers.
+Credit Classes that include GHG removals shall include these related
+requirements:
 
-If a Credit Class Admin manages a Credit Class or Methodology in a way
-that deviates from the rules as stipulated in the Regen Registry Program
-Guide, Regen Registry may revoke its approval of said Credit Class or
-Methodology, removing it from Regen Registry. For avoidance of doubt,
-the Credit Class or Methodology would still exist as a managed on-chain
-credit class on Regen Network, but would no longer be recognized under
-the Regen Registry Program.
+==== Real
 
-=== Access and Use of Credit Classes and Methodologies
+A real offset is the result of a Project Activity that yields
+quantifiable and verifiable GHG removals as stipulated in the Approved
+Methodology.
 
+==== Measurable
 
-. All Methodologies and Credit Classes registered under the Regen Registry
-must be either open source or open access, as designated by the original
-Methodology Developer or Credit Designer.
+Each credit represents one ton CO~2~e (1t CO~2~e) that has been removed
+(or avoided) from the atmosphere.
 
-    - Open Source Methodologies/Credit Classes are ones where the methodology
-    and all subsequent software, tools, and modules, are publicly available
-    and freely available for use, modification, and distribution.
+==== No Double Counting
 
-    - Open Access Methodologies/Credit Classes are those where the
-    Methodology/Credit Class is publicly accessible and free for use, but
-    may not come with subsequent software, tools, and modules, and may not
-    be available for modification without the approval of the Methodology or
-    Credit Designer.
-
-. For every new Methodology or Credit Class submitted to Regen Registry,
-the submitting party must explicitly declare whether their Methodology
-or Credit Class is Open Source or Open access at the time of
-registration. This declaration forms part of the official registration
-documentation and cannot be changed retroactively.
-
-. While all Methodology or Credit Class registered with the Regen Registry
-must be open source or open access, implementations of the Methodology
-or Credit Class by Monitors can be closed source. This means that
-Monitors may use proprietary tools or modules to implement the
-Methodology or Credit Class, as long as they can demonstrate that their
-implementation accurately follows the Methodology or Credit Class and
-meets all other requirements of the Regen Registry Program.
-
-. Modifications to the Methodology and Credit Class submitted to the Regen
-Registry must comply with the open source or open access declaration
-made by the original Methodology or Credit Class Designer.
-
-== Project Requirements
-
-=== General Requirements
-
-. Projects shall meet all applicable rules and requirements outlined in
-the Regen Registry Program Guide.
-
-. Projects shall only apply Credit Classes and Methodologies approved by
-into the Regen Registry. Credit Classes and Methodologies shall be
-applied in full and adhere to any applicable rules and requirements. The
-full list of approved Credit Classes and Methodologies can be found in
-the Regen Registry Handbook.
-
-. Projects shall apply the latest version of the applicable Credit Class
-and Methodology.
+Regen Registry does not allow double issuing and selling of credits for
+the same project area and/or temporal boundary. See also 'Registration
+on other registries' section.
 
 === Land Tenure
 
 . Land tenure is a legal term representing rights and interests in project
 lands.
 
-. The Project Proponent shall own, have control over, or document
-effective control over the GHG sources/sinks from which the removals
-originate.
+. Project Proponent shall own, have control over, or document effective
+control over the GHG sources/sinks from which the removals originate.
 
-. The Project Proponent shall provide documentation and/or attestation of
-land tenure.
+. Project Proponent shall provide documentation and/or attestation of land
+tenure.
 
 . In the case of leased land, the landowner shall agree to all contractual
-obligations taken by the Project Proponent, and the Project Proponent
+obligations taken by the Project Proponent, and the project Proponent
 shall provide documentation and/or attestation of title agreement to
 credits.
 
-. The Registry Agent may require a legal review by an expert in local law.
-
-=== Project Area
-
-. The Project Area may only include land meeting the following
-requirements:
-    - The land was not converted from forest land, wetlands or any other
-    natural ecosystem in the ten-year period prior to the Project's Start
-    Date.
-
-. The Project Area may include portions of land which are not eligible
-land, only if they are excluded from any GHG or co-benefit estimation.
-Those areas will be clearly demarcated in the Project Plan.
-
-=== Project Boundary
-
-. The Project Boundary shall be described in the Project Plan, including
-any GHG sinks, sources, and reservoirs, or other ecological indicators.
-
-=== Project Ownership
-
-. The Project Proponent shall stipulate the ownership of credits issued to
-the project. Regen Registry supports fractional ownership of the credits
-allocated to a project in a given issuance event, therefore credits can
-be split between Land Stewards, Land Owners, Project Developers, and
-Buyers.
-
-=== Project Start Date
-
-. Each Credit Class must specify the Project Start Date requirements.
-
-. The Project Proponent shall stipulate the Project Start Date and justify
-how it meets the eligibility requirements outlined in the Credit Class.
-
-. If a Project Start Date precedes project registration, the Project
-Proponent must justify how the project has met the eligibility and data
-requirements outlined in the Credit Class and Approved Methodology prior
-to project registration
-
-=== Project Crediting Period
-
-. Each Credit Class must specify the Crediting Period projects in that
-Credit Class are eligible to receive Credits.
-
-. Project Proponents shall stipulate the Crediting Period in the Project
-Plan.
+. Regen Registry may require a legal review by an expert in local law.
 
 === Regulatory Compliance
 
@@ -779,22 +700,30 @@ to all laws, regulations, and other legally binding mandates directly
 related to Project Activities.
 
 . Project Proponent is required to provide a regulatory compliance
-attestation for the project(s) in the project plan. This attestation
-must disclose all relevant laws, regulations, or other legally binding
-mandates directly related to Project Activities and indicate (if
-applicable) where Project Activities violate compliance.
+attestation for each verification. This attestation must disclose all
+violations or other instances of non-compliance with laws, regulations,
+or other legally binding mandates directly related to Project
+Activities.
 
-. Project Proponents are required to disclose on an ongoing basis any
-potential or imminent or actual violations of laws, regulations, or
-other legally binding mandates related to Project Activities.
+. Regen Registry retains discretion to decide on a case-by-case basis
+whether a violation requires cancelling the project or putting it on
+hold until the issue is addressed.
 
-. The Registry Agent retains discretion to decide on a case-by-case basis
-whether a violation requires canceling the project or putting it on hold
-until the issue is addressed.
+=== Project Area
+
+. The Project Area may only include land meeting the following
+requirements:
+    - the land was not converted from forest land, wetlands or any other
+    natural ecosystem (see rnd taxonomy document for definitions) in the 10
+    year period prior to the Project's Adoption Date.
+
+. The Project Area may include portions of land which are not eligible
+land, only if they are excluded from any GHG or co-benefit estimation.
+Those areas will be clearly demarcated in the Project Plan.
 
 === Registration on other Registries
 
-. Project Proponents are required to state if they plan to apply in the
+. Project Proponent is required to state if they plan to apply in the
 future, or have applied for and been listed, registered, and/or been
 issued GHG emission reduction or removal credits, biodiversity credits
 or any other ecological credit through any other GHG emissions program,
@@ -815,127 +744,129 @@ more than one registry.
 
 - No double sale - once any credits have been sold on another registry,
 the Project Proponent will be required to cancel that project in order
-to register on the Regen Registry.
+to register on Regen Registry.
 
-=== Aggregate Projects
-
-. Project Proponents may be able to create efficiencies around reporting
-and verification by strategically combining a group of project areas
-participating in an Aggregate Project. To that end, project areas should
-be grouped so their defining characteristics are as homogeneous as
-possible. Verifiers may select randomly which project areas will receive
-on-site visits, or apply a risk analysis to identify project areas with
-the strongest influence over an Aggregate Project's outcomes. Verifiers
-can use their own discretion to determine the data sampling approach,
-yet all sites require at least a desk-based review.
-
-. Sites must be located in the same pre-defined climatic or geographic
-region and share similar soil, phytophysiognomy, and other ecological
-characteristics, and share the same land-management practice. Project
-Proponents must justify registration of aggregated projects in the
-Project Plan.
-
-=== Safeguards
-
-. Project Activities must not negatively affect the environment or local
-communities. The Project Proponent must identify and address any
-negative environmental and socio-economic impacts of Project Activities
-and engage with local stakeholders to mitigate them.
-
-. Safeguard conditions hold, not only during project registration but
-throughout the lifetime of the project. That is, Project Proponents with
+Note, these conditions hold, not only during project registration but
+throughout the lifetime of the project. That is, Project Proponent with
 an existing project on Regen Registry shall follow the same procedure
 above if planning to register on another registry concurrently.
 
-====  No Net Harm
-
-. The Project Proponent shall detail and potential negative socio-economic
-and environmental impacts of the project and the steps taken to mitigate
-them. This includes risks of project implementation to local
-stakeholders, how risks are mitigated and plans to protect local
-stakeholder property rights Include process for conflict resolution
-between project proponent and local stakeholders, such as grievance
-redress.
-
-====  Local Stakeholder Consultation
-
-. The Project Proponent shall indicate how local stakeholders were
-identified and consulted prior to the project implementation.
-
-====  Environmental Impact
-
-. The Project Proponent must indicate if environmental impact assessments were
-undertaken and describe the process and findings.
-
-====  Public Comment
-
-. Public Comment - the Project Proponent shall specify if a community
-public consultation was undertaken prior to the project implementation
-and detail how comments were addressed, either in updates to the project
-or justified as irrelevant.
-
-=== Project Plan Deviations
-
-. Deviations from the Credit Class or Approved Methodology are permitted
-where they do not negatively affect the conservativeness of the Credit
-Class or Approved Methodology's approach to the quantification of GHG
-emissions reductions and removal enhancements, or other ecological
-benefits, and do not affect the Safeguards specified in Section 6.10.
-
-. Project Proponents submitting Project Plan deviations must provide
-evidence that the proposed deviation meets the conservativeness
-standards of the Credit Class and Approved Methodology.
-
-. The Registry Agent will permit project-specific deviations from the
-Approved Methodology where they do not negatively affect the
-conservativeness of an Approved Methodology's approach to the
-quantification of GHG emissions reductions and removal enhancements.
-
-. The Registry Agent will review deviation requests, and if approved,
-deviations can be applied to a specific project, but are not published
-as modifications to the Credit Class or Approved Methodology. Any
-approved deviations must be communicated to the Credit Class Admin, and
-may be overridden by the Credit Class Admin.
+See Avoiding Double Counting section for more details.
 
 == Project Rules and Regulations
 
-=== Project Registration 
+=== Approved Methodology
 
-. Project Proponents must submit a Project Plan and subsequent
-documentation to the Registry Agent to apply for Project Registration
-under a given Credit Class.
+Each Credit Class shall define the Approved Methodology(s) which the
+credit relies upon.
 
-. The Registry Agent shall conduct an exhaustive review of the Project
-Plan and subsequent documentation to ensure the Project Proponent has
-met all the requirements outlined in the Credit Class, Methodology, and
-Regen Registry Program Guide and register the project upon satisfactory
-confirmation that all documentation is complete.
+=== Project Plan
 
-=== Project Monitoring and Credit Issuance
+The Project Plan describes the Project Activity, addresses eligibility
+requirements, establishes project boundaries, and more. The Project
+Proponent shall fill out the Project Plan
+templatefootnote:[https://drive.google.com/file/d/1q6-26M-ROqKpfbkZf8YSDG2j2vawiVun/view?usp=sharing[Regen
+Registry Project Plan]] and submit for review by Regen Registry.
 
-. Monitoring and Verification reports shall be created for each Reporting
-Period. Monitors and Verifiers shall submit reports to the Registry
-Agent, including any corrections/revisions identified by the verifier
-(if applicable).
+=== Project Lifecycle
 
-. The Monitoring and Verification Reports shall describe the current
-status of project operation, and include the data monitored, the
-monitoring plan, the calculated emission reductions and ecological
-indicators for the Reporting Period stated in the Credit Class and
-following the guidelines in the Approved Methodology.
+This is a general outline of the project stages:
 
-. The Registry Agent shall conduct an exhaustive review of all submitted
-information to ensure that Monitors and Verifiers have met the
-requirements stipulated in the Credit Class and Approved Methodology and
-issue credits upon satisfactory confirmation that all documentation is
-complete.
+. Account Creation - Project Proponent provides contact information and
+creates an account on Regen Registry.
+
+. Project Creation - Project Proponent creates a project, applies for a
+credit, completes the Project Plan, and signs the corresponding legal
+agreements.
+
+. Preliminary Review - Regen Registry reviews the submission for
+completeness and compatibility with the Credit Class and Approved
+Methodology, and requests additional information as needed.
+
+. Project Registration - If everything is in order, the project is
+approved, the contract is signed between the Project Proponent and Regen
+Registry.
+
+. Baseline Measurement - Project Proponent engages with Monitor and
+provides the project information as defined in the Approved Methodology.
+The Monitor follows the guidelines in the Approved Methodology and
+generates a baseline measurement of the ecological indicators and
+benefit assessment assigned to the Credit Class. The Baseline Monitoring
+Report is submitted to Regen Registry. If the report is approved, it is
+made publicly available on Regen Registry.
+
+. Verification - Per the verification schedule defined in the Credit
+Class, the Project Proponent engages with an independent, approved
+Verifier to verify the inputs provided by the Project Proponent and the
+baseline and monitoring reports submitted by the Monitor follow the
+specification of the Approved Methodology. Fees for verification are
+determined by the Project Proponent and Verifier. The Verifier submits
+to Regen Registry a verified Project Plan, verified monitoring
+report(s), and verification report with verification rating (see
+Verification section for further details).
+
+. Verification Acceptance - Based on the verification report rating, Regen
+Registry issues credits to the Project Proponent. The verification
+report is made publicly available on Regen Registry.
+
+. Subsequent Monitoring and Verification rounds - Following the guidelines
+in the Approved Methodology and Credit Class, subsequent monitoring and
+verification rounds are performed, and the above steps repeat for each
+credit vintage issuance.
+
+. Issuance - Regen Registry issues to the Project Proponent’s account
+credits for the relevant reporting period, in the amount listed in the
+monitoring report.
+
+. Transfer or Retire - At the Project Proponent’s discretion, they can
+sell or retire the credits.
+
+. Final Project Verification - At the end of the Crediting Term, the
+Project Proponent will engage in a final project verification. The
+report will be made public on Regen Registry.
+
+. Project Renewal (optional) - After the final project verification, the
+Project Proponent can elect to renew the project. The duration for
+renewal is defined by each Credit Class.
+
+GHG removal projects’ specific adaptations:
+
+[arabic, start=13]
+. Credit issuance - With each issuance, a percentage of credits, as
+defined in the Credit Class, is deposited into the Buffer Pool.
+
+. Buffer pool reconciliation - Based on the end-of-project carbon stock
+estimation, Regen Registry will retire or transfer credits from the
+Buffer Pool. See the Buffer Pool section.
+
+. Permanence Monitoring and Verification - At the end of the permanence
+period, the Project Proponent will conduct a permanence monitoring and
+verification round (desk review) in order to verify retention of GHG
+removed during the project.
+
+=== Project Ownership
+
+Project Proponent shall stipulate the ownership of credits issued to the
+project. Regen Registry supports fractional ownership of the credits
+allocated to a project in a given issuance event, therefore credits can
+be split between Land Stewards, Land Owners, Project Developers, and
+Buyers.
+
+=== Project Registration Date
+
+. The Project Registration Date is the date the Project has been approved
+by Regen Registry. The Crediting Term officially begins on this date.
+
+. If an Adoption Date precedes the Project Registration Date, the
+Crediting Term will commence at the Project Initial Monitoring Date as
+defined by the Approved Methodology.
 
 === Project Renewal
 
 . At the end of the project, the Project Proponent can elect to renew the
 project. The Project Proponent may do so by:
 
-.. Choosing from a renewal period as stipulated in the Credit Class.
+.. Choosing from these renewal period options: 5, 10, 15 or 20 years.
 .. Submitting an updated Project Plan in compliance with up-to-date Credit
 Class and Approved Methodology.
 
@@ -945,21 +876,36 @@ as the renewal up-to-date baseline.
 
 . Project Proponents may renew a project multiple times. Regen Registry
 does not limit the number of periods of renewal that are allowed for a
-given project.
+given project renewals.
+
+=== Project Monitoring Reports
+
+. Project Monitoring Reports shall be completed for each monitoring period
+following the template for Project Monitoring Report. The Monitor shall
+submit the report to Regen Registry including any corrections/revisions
+identified by the verifier (if applicable).
+
+. The Monitoring Report shall describe the current status of project
+operation, and include the data monitored, the monitoring plan, the
+calculated emission reductions and ecological indicators for the
+reporting period stated in the Credit Class and following the guidelines
+in the Approved Methodology.
 
 === Project Termination 
 
 ==== End of Crediting Term 
 
-. At the end of the Crediting Period, the Project Proponent will engage in
-a final project verification. The report will be made public.
+
+. At the end of the Crediting Term, the Project Proponent will engage in a
+final project verification. The report will be made public on Regen
+Registry.
 
 . The Project Proponent has the choice to renew the project (renewal
-duration stipulated in Credit Class).
+duration stipulated in Credit class).
 
 . In the case of a GHG removal credit, based on the end of project carbon
-stock estimation, the Credit Class Admin will retire or issue credits
-from the Buffer Pool. See the Buffer Pool section for more details.
+stock estimation, Regen Registry will retire or issue credits from the
+Buffer Pool. See the Buffer Pool section for more details.
 
 ====  Premature Project Termination 
 
@@ -967,14 +913,14 @@ from the Buffer Pool. See the Buffer Pool section for more details.
 a Project Proponent can decide to end the project prematurely with no
 penalties.
 
-. Regen Registry, Credit Class Admin, and Registry Agent fees will still
-apply, along with any outstanding obligations between Project Proponent
-and 3rd parties, such as Verifiers and/or Monitors.
+. Regen Registry fees will still apply, along with any outstanding
+obligations between Project Proponent and 3rd parties, such as Verifiers
+and/or Monitors.
 
 ==== In the case of a GHG removal credit
 
 . Before credit sales transactions, project credits in the Project
-Proponent's account will be canceled including the respective Buffer
+Proponent's account will be cancelled including the respective Buffer
 Pool and Permanence Reversal Buffer allocations.
 
 . After credit sales transactions, the Project Proponent:
@@ -990,7 +936,7 @@ non-compliant.
 
 === Project On Hold
 
-. A project may be put on hold by the Registry Agent if:
+. A project may be put on hold if:
 
     - Project Proponent fails to comply with the reporting requirements stated
     in Credit Class and the Approved Methodology.
@@ -1004,116 +950,131 @@ non-compliant.
 identified issues are resolved.
 
 . The Project Proponent will be allowed 60 days to remedy the fault found
-or the project will be deemed non-compliant. The Registry Agent may
-require an additional monitoring and verification round after the fault
-has been remedied.
+or the project will be deemed non-compliant. Regen Registry may require
+an additional monitoring and verification round after the fault has been
+remedied.
 
 === Non-Compliant Projects
 
 . Projects that are non-compliant include the following cases:
 
     - In the event that a project was put on-hold and the Project Proponent
-    did not comply with the satisfaction of the Registry Agent's requests
-    within 60 days.
+    did not comply with Regen Registry requests within sixty days.
 
-    - The Project Proponent terminated the project prematurely and did not
+    - The Project Proponent cancelled the project prematurely and did not
     comply with final monitoring and verification round requirements.
 
 . These cases will be seen as a breach of contract, subject to dispute
-resolution as stipulated in the project registration agreement between
-the Project Proponent and Registry Agent. If the dispute is not
-resolved, the project will be terminated and all issued credits
-remaining in Project Proponent's account along with the project credits
-allocated to Buffer Pool and Permanence Reversal Buffer (if applicable)
-will be canceled.
+resolution as stipulated in the legal contracts. If the dispute is not
+resolved, the project will be cancelled from the registry and all issued
+credits remaining in Project Proponent's account along with the project
+credits allocated to Buffer Pool and Permanence Reversal Buffer (if
+applicable) will be cancelled.
 
-. Non-compliant projects will be marked as non-compliant and, depending on
-the case, at the Registry Agent's discretion, the Project Proponent
-might be restricted from listing any future projects on Regen Registry.
+. Non-compliant projects will be delisted from Regen Registry and,
+depending on the case, at RND discretion, the Project Proponent might be
+restricted from listing any future projects on Regen Registry.
 
-=== Previous Rejection by other Registries
+=== Retiring Credits
 
-. Regen Registry may consider a project rejected by other registries, due
-to procedural or eligibility requirements, if the project complies with
-the Credit Class and Approved Methodology. The Project Proponent for
-such a project shall include a statement in the Project Plan that lists
-all other programs to which the Project Proponent has applied for
-registration and was rejected, the reason(s) for the rejection, and
-pertinent documentation.
+In the case of a GHG removal credit:
+
+.  Traditionally in carbon markets, credit retirement involves allowances
+from regulated emission trading
+schemesfootnote:[https://en.wikipedia.org/wiki/Emissions_trading#Trading_systems[[.underline]#https://en.wikipedia.org/wiki/Emissions_trading#Trading_systems#]]
+as a method for offsetting carbon emissions. Regen Registry is not a
+regulated emission trading scheme, but instead provides buyers a way to
+voluntarily offset their carbon footprint.
+
+. Credits can only be retired once. Once a credit has been retired, it
+cannot be transferred or sold anymore.
+
+. Regen Registry provides the ability for buyers to trade their credits,
+i.e. sell them to other buyers on a secondary market. In the future, a
+secondary marketplace functionality will be added.
+
+. Credit buyers will have access to the Project Proponent's information,
+the project location, monitoring reports, and other pertinent data which
+is made publicly available on Regen Registry. Buyers must indicate the
+owner of the beneficial interest in the GHG mitigation claim for each
+credit they retire.
+
+=== Tradability
+
+. Credit buyers will have the option to sell their credits so long as they
+have not yet been retired. Credits are treated as commodities, not as
+securities. RND is committed to comply with all relevant regulatory
+frameworks, both in the US and internationally. In the future,
+additional functionality to support secondary market trading will be
+added.
+
+=== Aggregate Projects
+
+. Project Proponents may be able to create efficiencies around reporting
+and verification by strategically combining a group of project areas
+participating in an Aggregate Project. To that end, project areas should
+be grouped so their defining characteristics are as homogeneous as
+possible. Verifiers may select randomly which project areas will receive
+on-site visits, or apply a risk analysis to identify project areas with
+the strongest influence over an Aggregate Project's outcomes. Verifiers
+can use their own discretion to determine the data sampling approach,
+yet all sites require at least a desk-based review.
+
+. Sites must have similar soil types and be located within the same
+pre-defined geographic region, following the ecosystem types as outlined
+in the Taxonomy Document.
 
 === Personal / Commercially Sensitive Information
 
 . Project Proponents may request to designate portions of the Project Plan
 or project documentation as Personal / Commercially Sensitive
-Information. This information must be available for review by the
-Registry Agent and the approved Verifier (with non-disclosure
-agreements, as necessary), but will not be posted publicly as part of
-the project documentation on Regen Registry. This information will be
-restricted to these Project Plan items:
+Information. This information must be available for review by Regen
+Registry and the approved Verifier (with non-disclosure agreements, as
+necessary), but will not be posted publicly as part of the project
+documentation on Regen Registry. This information will be restricted to
+these Project Plan items:
 
-.. Entity name and contact information (for project actors other than the
-Project Proponent, Monitor, and Verifier)
+.. Entity name and contact information
 
-.. Underlying documents proving attestation of land tenure
+.. Land tenure
 
-.. Underlying contractual agreements between project actors
+.. Land ownership type
 
 . To promote transparency, Regen Registry shall presume by default all
 project information to be available for public scrutiny, unless
 requested otherwise by the Project Proponent.
 
-=== Managing Property Under Restrictive Permanence Covenants Obligation
+=== Previous Rejection by other Registries
 
-. Property placed under permanence obligations from a project registered
-with Regen Registry must maintain those obligations through the defined
-permanence period to ensure ongoing protection of Project Activities. A
-change in ownership of the land does not change these requirements,
-therefore a Project Proponent is required to burden the property with a
-restrictive covenant to ensure these permanence obligations remain in
-place in the event of all subsequent transfers of property rights to new
-owners that may occur prior to the end of the Permanence Period.
+. Regen Registry may consider a project rejected by other registries, due
+to procedural or eligibility requirements, if the project complies with the
+Credit Class and Approved Methodology. The Project Proponent for such a
+project shall include a statement in the Project Plan that lists all
+other programs to which the Project Proponent has applied for
+registration and was rejected, the reason(s) for the rejection, and
+pertinent documentation.
 
-. The Project Proponent shall attest to its intent to have the restrictive
-covenant run with the land at creation of the covenant through the the
-end of the defined Permanence Period
+=== Managing Property Under Covenance Obligation
 
-. The covenant shall relate to the direct use or enjoyment of the land in
-order to protect the permanence obligations , for example, restrictions
-from deforestation in the event of a reforestation project
-
-. The Project Proponent shall inform the subsequent landowner of the
-restrictive covenant that runs with the land and take appropriate action
-to document this covenant in writing in the relevant jurisdiction, such
-as through the creation of a separate deed or placing notice on the
-register of title.
-
-. The Project Proponent shall ensure privity between covenantor and
-covenantees and other legal requirements necessary for the restrictive
-covenant to run with land per the jurisdiction in which the land is
-located
-
-. If the Project Proponent is not the land owner, it shall enter into an
-agreement with the land owner such that the land owner burdens her land
-with a restrictive covenant that shall run with the land and burden
-subsequent landowners and covenantees
-
-. The Project Proponent is required to submit documentation of the
-covenant to the Registry Agent.
-
-. Project Proponents must also inform prospective land buyers of any
-restrictive covenants that run with the land registered under projects
-with Regen Registry
+. Project Proponents that choose to put their land under permanence
+convenance are required to inform prospective buyers of any permanence
+obligations associated with the land when selling their property.
 
 == GHG Removal and Emission Reduction Requirements
 
-This section outlines the requirements to GHG removal and emission
-reduction credits issued on Regen Registry.
+The following requirements apply to GHG removal and emission reduction
+credits issued on Regen Registry.
 
-The Regen Registry attempts to follow the best practices as applied to
-carbon credit markets and Agriculture, Forestry and Other Land Use
-(AFOLU) carbon credits. The core GHG accounting principles laid out in
-ISO 14064 Part
-2:2019footnote:[https://www.iso.org/obp/ui/#iso:std:iso:14064:-2:ed-2:v1:en[https://www.iso.org/obp/ui/#iso:std:iso:14064:-2:ed-2:v1:en]]
+=== GHGH Accounting and Policies
+
+Guiding principles for GHG Accounting
+
+.. In defining this Program Guide, RND has attempted to follow the best
+practices as applied to carbon credit markets and Agriculture, Forestry
+and Other Land Use (AFOLU) carbon credits.
+
+.. The core GHG accounting principles laid out in ISO 14064 Part
+2:2019footnote:[https://www.iso.org/obp/ui/#iso:std:iso:14064:-2:ed-2:v1:en[[.underline]#https://www.iso.org/obp/ui/#iso:std:iso:14064:-2:ed-2:v1:en#]]
 have informed this guide and are summarized below:
 
 [width="100%",cols="25%,75%"]
@@ -1188,6 +1149,13 @@ enables meaningful comparisons to other methods and data.
 uncertainties related to the quantification of GHG emission reductions
 or removal enhancements.
 
+. This Program Guide and Credit Class require that the sampling error
+associated with the mean of the estimated emission reduction/removal not
+exceed ±20% of the mean at the 90% confidence interval to report the
+mean of the estimated emission reduction/removal. If the Project
+Proponent cannot meet this target, then an uncertainty deduction is
+required as specified by the Approved Methodology.
+
 ====  Transparency 
 
 . The Approved Methodology, Credit Class and Program Guide disclose
@@ -1218,15 +1186,15 @@ specify GHG emissions or removal factors that are:
 ====  Independently Verified
 
 . The baseline report, monitoring reports, and Project Plan are validated
-by a verifier approved by the Registry Agent, or Credit Class Admin
-(unless otherwise stipulated in the Credit Class).
+by a Regen Registry approved verifier (unless otherwise stipulated in
+the Credit Class).
 
 ====  Managing Data Quality 
 
 . The Monitor shall follow the guidelines in the Approved Methodology and
 establish quality assurance and quality control (QA/QC) procedures to
 manage data and information, including the assessment of uncertainty in
-the Baseline and ongoing monitoring.
+the baseline and ongoing monitoring.
 
 === Additionality
 
@@ -1256,19 +1224,6 @@ different considerations and barriers to adoption.
 . Each Credit Class shall stipulate the relevant additionality
 requirements to that credit.
 
-=== Leakage
-
-Leakage is an increase in GHG emissions or decrease in sequestration
-outside the project boundaries that occurs because of the project's
-actions.
-
-. Each Credit Class shall define the appropriate procedures to address
-leakage.
-
-. Over time, if certain land management activities have consistently been
-found to create substantial leakage across multiple projects, Regen
-Registry may remove those activities from the approved list of
-practices.
 
 === Permanence 
 
@@ -1287,38 +1242,40 @@ and/or participate in an activity that reverses the
 sequestration).footnote:[https://americancarbonregistry.org/carbon-accounting/standards-methodologies/american-carbon-registry-standard-3/acr-standard-v6-0-may-2019-public-comment-version.pdf[https://americancarbonregistry.org/carbon-accounting/standards-methodologies/american-carbon-registry-standard-3/acr-standard-v6-0-may-2019-public-comment-version.pdf]]
 
 Land use-based and forestry projects may require the Project Proponent
-to register covenants on their land and/or restrict land use for the
-duration of the Permanence Period as defined in the Credit Class. This
-approach is not financially viable for most Project Proponents as the
-covenant often results in a reduction in the market value of the land
-that is greater than the potential additional revenues from credit
-sales. Further, there is no length of time, short of perpetual, that is
-equated with the assurance of permanence, nor is there a sound
-scientific basis or accepted international standard around any number of
-years that equates to an emission reduction/removal being permanent.
+to register covenants on their land and/or restrict land use for 40 to
+100 years post credit
+issuancefootnote:[https://nori.com/resources/how-nori-works[https://nori.com/resources/how-nori-works]].
+This approach is not financially viable for most Project Proponents as
+the covenant often results in a reduction in the market value of the
+land that is greater than the potential additional revenues from credit
+sales.
+
+Further, there is no length of time, short of perpetual, that is equated
+with the assurance of permanence, nor is there a sound scientific basis
+or accepted international standard around any number of years that
+equates to an emission reduction/removal being permanent.
 
 . Regen Registry requires that Permanence Periods are specified in each
 Credit Class. The Project Proponent has the following requirements as it
 relates to permanence assurances:
 
-. Allocate the additional amount specified in each Credit Class of each
-credit issuance (in addition to the Buffer Pool) to a dedicated
-Permanence Reversal Buffer; and
+. Allocate an additional 5% of each credit issuance (in addition to the
+Buffer Pool) to a dedicated Permanence Reversal Buffer.
 
-. Register as necessary, under the requirements of the particular Credit
-Class, appropriate covenant(s) on the land from the Project Registration
-until the end of the permanence period specified in the Credit Class.
-See Section 7.9 (<<Managing Property Under Restrictive Permanence Covenants Obligation>>) for requirements surrounding restrictive covenants
-running with the land to meet permanence requirements.
+. Register a covenant on the land from the Project Registration until the
+end of the 25-year permanence period.
++
 The Project Proponent states their choice in the Project Plan.
 
 . If the project is renewed, the Project Proponent will choose again a
 permanence assurance for the renewed project.
 
 . If the Project Proponent chooses the Permanence Reversal Buffer, at the
-end of the permanence period , the Project Proponent will conduct a
-permanence monitoring and verification round in order to verify carbon
-retention. See Permanence Reversal Buffer section for more details.
+end of the permanence period (25 years from the end of the Crediting
+Term), the Project Proponent will conduct a permanence monitoring and
+verification (desk verification suffices) round in order to verify
+carbon retention. See Permanence Reversal Buffer section for more
+details.
 
 . Each Credit Class can create alternative permanence requirements as
 appropriate.
@@ -1329,67 +1286,49 @@ Carbon sequestration projects have the potential for GHG removals to be
 reversed unintentionally or overestimated. The Buffer Pool serves as a
 tool to mitigate the general and project-specific risk factors,
 including the overall uncertainty risk in GHG estimations (on top of the
-portion accounted for already by the Approved Methodology). Buffer pool
-contributions shall be decided at the Credit Class level, and designed
-and implemented by Credit Class Administrators. While Buffer Pools are
-primarily used in GHG emission reduction and removal projects, they can
-be applied to any type of ecological crediting program.
+portion accounted for already by the Approved Methodology).
 
-==== Types of Buffer Pools 
+==== Buffer Pool Account
 
-Credit Class Buffer Pools are those which aggregate risk across all
-projects registered under a given Credit Class, meaning that all
-projects registered under given Credit Class contribute to and can pull
-from the same Buffer Pool in the event of a reversal.
+Regen Registry will establish a dedicated account, over which it has
+sole operational and management control, that serves to hold the Buffer
+Pool contributions from each project. Project Proponents may not sell,
+transfer, retire, or dispose of credits that are held within the Buffer
+Pool Account.
 
-. Credit Class Buffer Pools can be created by Credit Class Admins, who
-will establish a dedicated account, over which it has sole operational
-management and control.
+==== Buffer Pool Contributions
 
-. Credits held in Credit Class Buffer Pools may not be sold, transferred,
-retired, or disposed of until the end of a crediting period, permanence
-period, or project termination as specified below.
+. Regen Registry will apply a default contribution of 20% of each credit
+issuance (as quantified by the latest monitoring report) to the Buffer
+Pool in order to account for the risks mentioned above.
++
+Each Credit Class can override this allocation as appropriate.
 
-Project Specific Buffer Pools are those set up by individual projects
-and used to cover reversal events for a specific project.
-
-. Credit Class may require each project to have a Project Specific Buffer
-Pool in addition to a Credit Class Buffer to cover reversal events for a
-specific project. Project Specific Buffers must be managed by the Credit
-Class Admin, who shall have sole operational management and control.
-
-. If a Credit Class does not require a Project Specific Buffer Pool,
-Project Proponents may still choose to set one up.
-
-==== Buffer Pool Contributions and Use
-
-. Each Credit Class shall specify any relevant Buffer Pool contributions
-as a percentage of credit issuance.
-
-. Credit Class Admins can dictate the amount of credits a project can use
-to cover a reversal event or loss at the end of the crediting term to
-ensure use of the Credit Class Buffer is shared equally between projects
-registered under a Credit Class.
-
-. The Registry Agent shall deposit credits into the dedicated Credit Class
-or Project Specific Buffers upon issuance.
+. The credits will be automatically deposited into the dedicated
+administrative Buffer Pool Account.
 
 ==== End of Crediting Term Processing
 
 . Upon the completion of the project and the final monitoring and
 verification, the Buffer Pool will be reconciled according to the end of
-project carbon stock level.
+project carbon stock level:
 
 . If the final project carbon stock level was above the level reported in
 prior monitoring and verification round:
 
-    .. The existing credit balance of Buffer Pool will be released to Project
-    Proponent unless otherwise specified in the Credit Class.
+    .. The existing credit balance of Buffer Pool will be issued to Project
+    Proponent.
+
+    .. 10% of credits (instead of the normal 20%) in the final issuance will be
+    allocated back to the Buffer Pool in order to account for any
+    uncertainty of estimation in the last monitoring round.
 
 . If the final project carbon stock level was below the level reported in
 prior verification:
 
-    .. The gap will be withdrawn from the Buffer Pool and immediately canceled.
+    .. The gap will be withdrawn from the Buffer Pool and immediately retired.
+    The remainder of the Buffer Pool minus 10% will be distributed to the
+    Project Proponent.
 
     .. If the Buffer Pool balance does not cover the gap, the Project Proponent
     will have the following options to compensate for the carbon stock loss:
@@ -1399,15 +1338,13 @@ prior verification:
         ... Use non-transacted (sold) credit/other credits in Project Proponent's
         Regen Registry account.
 
-        ... Purchase credits to compensate for the carbon loss. The Credit Class
-        Admin must approve any credits purchased to compensate loss. These
-        credits will be canceled upon purchase.
+        ... Purchase credits to compensate for the carbon loss.
 
-==== Premature Project Termination 
+==== Premature Project Ending Process
 
-. In the event that the project prematurely terminates, the Credit Class
-Admin will follow a conservative approach and automatically cancelall
-the credits in the Buffer Pool associated with the project.
+. In the event that the project has ended prematurely, Regen Registry will
+follow a conservative approach and automatically retire all the credits
+in the Buffer Pool associated with the project.
 
 . In a final verification report, where the end of project carbon stock
 level is available, similarly to 'End of Crediting Term Processing', if
@@ -1415,19 +1352,19 @@ the Buffer Pool was insufficient to cover the gap in carbon stocks level
 then the Project Proponent will be required to purchase credits to
 compensate for the carbon loss.
 
-. If no final verification report is available, to be conservative, Credit
-Class Admins will assume a default loss of 10% in carbon stock level
-from prior levels and cancel credits accordingly. If the Buffer Pool was
+. If no final verification report is available, to be conservative, Regen
+Registry will assume a default loss of 10% in carbon stock level from
+prior levels and retire credits accordingly. If the Buffer Pool was
 insufficient to cover that loss, the Project Proponent will be required
 to purchase credits to compensate for the carbon loss.
 
-==== Overestimation of Credits Issued during Crediting Period 
+==== Overestimation of Credits Issued during the Crediting Term 
 
-. In the event that during the Crediting Term a Verification Report rating
+. In the event that during the Crediting Term a verification report rating
 was Rejection on the grounds that the carbon stock level was
 overestimated, then:
 
-. The gap will be withdrawn from the Buffer Pool and immediately canceled.
+. The gap will be withdrawn from the Buffer Pool and immediately retired.
 
 . If the Buffer Pool balance does not cover the gap, the Project Proponent
 will have the following options to compensate for the carbon stock loss:
@@ -1440,63 +1377,45 @@ will have the following options to compensate for the carbon stock loss:
 
 - In any event, per above, that the Project Proponent is required to
 purchase credits to compensate for carbon loss, these credits shall be
-from other projects with similar regional characteristics and
+from other like projects with similar regional characteristics and
 co-benefits, either from Regen Registry or from Established Registries.
-The Credit Class Admin must approve any credits purchased to compensate
-loss. These credits will be canceled upon purchase.
 
 === Permanence Reversal Buffers
 
-==== Types of Permanence Reversal Buffers
+Project Proponents can choose to use a Permanence Reversal Buffer to
+mitigate permanence-related reversal risk, i.e. GHG removal reversal
+that has occurred over the permanence period.
 
-Credit Class Permanence Reversal Buffers are those which aggregate risk
-across all projects registered under a given Credit Class, meaning that
-all projects registered under given Credit Class contribute to and can
-pull from the same Buffer Pool in the event of a reversal.
+==== Permanence Reversal Buffer Account
 
-. Credit Class Permanence Reversal Buffers can be created by Credit Class
-Admins, who will establish a dedicated account, over which it has sole
-operational management and control.
+. Regen Registry will establish a dedicated account, over which it has
+sole operational and management control, that serves to hold the
+Permanence Reversal Buffer contributions from each project. Project
+Proponent may not transfer, retire, or dispose of credits that are held
+within the Permanence Reversal Buffer.
 
-. Credits held in Credit Class Permanence Reversal Buffers may not be
-sold, transferred, retired, or disposed of until the end of a permanence
-periodor project termination as specified below.
+==== Permanence Reversal Buffer Contribution
 
-Project Specific Permanence Reversal Buffers are those set up by
-individual projects and used to cover reversal events for a specific
-project.
+.. In the event that Project Proponents choose to use the Permanence
+Reversal Buffer, Regen Registry will apply a default contribution of 5%
+of each credit issuance (as quantified by the latest monitoring report)
+in order to account for the risk of reversal during the permanence
+period.
 
-. Credit Class may require each project to have a Project Specific
-Permanence Reversal Buffers l in addition to a Credit Class Permanence
-Reversal Buffers Project to cover reversal events for a specific
-project. Project Specific Permanence Reversal Buffers must be managed by
-the Credit Class Admin, who shall have sole operational management and
-control.
-
-. If a Credit Class does not require a Project Specific Permanence
-Reversal Buffer, Project Proponents may still choose to set one up.
-
-==== Permanence Reversal Buffer Contribution 
-
-. In the event that Project Proponents choose to use the Permanence
-Reversal Buffer, the permanence pool must be specified by the Credit
-Class Admin.
-
-. In the event the Project Proponents choose not to use the Permanence
-Reversal Buffer and use other alternatives such as long term restrictive
-covenants, the permanence reversal buffer contributions will not be
-deducted from each credit issuance.
+.. In the event the Project Proponents choose not to use the Permanence
+Reversal Buffer and use other alternatives such as long term covenants,
+the 5% will not be deducted from each credit issuance.
 
 ====  End of Permanence Period 
 
 . Upon the completion of the permanence period an additional monitoring
 and verification round will occur and the Permanence Reversal Buffer
 will be reconciled with the carbon stock level at the last recorded
-monitoring event during the Crediting Term.
+monitoring event during the Crediting Term:
 
     .. If the final GHG level was above the last recorded GHG level, the
-    existing balance of Permanence Reversal Buffer will be released to
-    Project Proponent.
+    existing balance of Permanence Reversal Buffer will be issued to Project
+    Proponent.
 
 . If the final level was below the last recorded level:
 
@@ -1515,28 +1434,42 @@ monitoring event during the Crediting Term.
         purchased credits can be from Regen Registry, or from Established
         Registries.
 
-==== Premature Project Termination
+==== Premature Project Ending Process
 
 . In the event that the project has ended prematurely, the Project
 Proponents are still contractually obligated to maintain the permanence
 requirements for each credit vintage sold.
 
 . Regen Registry will follow the same approach at the end of permanence
-period for carbon stock reconciliation - see section 8.7.3.
+period for carbon stock reconciliation (see section 8.7.3)
 
 . If no monitoring and verification report was conducted at the end of the
-permanence period, in order to be conservative, the Credit Class Admin
-will assume a default loss of 10% in carbon stock level from last
-recorded level. If the Permanence Reversal Buffer was insufficient to
-cover that loss, the Project Proponent will be required to purchase
-credits to compensate for that loss.
+permanence period, in order to be conservative, Regen Registry will
+assume a default loss of 10% in carbon stock level from last recorded
+level. If the Permanence Reversal Buffer was insufficient to cover that
+loss, the Project Proponent will be required to purchase credits to
+compensate for that loss.
 
 ==== Purchase of Credits to Compensate Carbon Loss
 
 . In any event, per above, that the Project Proponent is required to
 purchase credits to compensate for carbon loss, these credits shall be
-from other projects with similar regional characteristics and
+from other like projects with similar regional characteristics and
 co-benefits, either from Regen Registry or from Established Registries.
+
+=== Leakage
+
+Leakage is an increase in GHG emissions or decrease in sequestration
+outside the project boundaries that occurs because of the project's
+actions.
+
+. Each Credit Class shall define the appropriate procedures to address
+leakage.
+
+. Over time, if certain land management activities have consistently been
+found to create substantial leakage across multiple projects, Regen
+Registry may remove those activities from the approved list of
+practices.
 
 === Avoiding Double Counting 
 
