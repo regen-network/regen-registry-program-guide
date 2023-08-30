@@ -5,6 +5,13 @@ v1.1, August 3, 2023
 :toc:
 :sectnums: 
 :sectnumlevels: 3
+:icons: font
+
+
+ifdef::backend-html5,env-github[]
+NOTE: A PDF version of this document is available 
+link:pdf/program-guide.pdf[here]
+endif::[]
 
 [discrete]
 == Disclaimer
