@@ -1044,7 +1044,7 @@ were undertaken and describe the process and findings.
 
 ====  Public Comment
 
-. Public Comment - the Project Proponent shall specify if a community
+. The Project Proponent shall specify if a community
 public consultation was undertaken prior to the project implementation
 and detail how comments were addressed, either in updates to the project
 or justified as irrelevant.
