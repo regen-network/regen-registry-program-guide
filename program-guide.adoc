@@ -430,7 +430,7 @@ verification requirements stipulated in a given Credit Class.
 == Acronyms
 
 [horizontal]
-GHG:: Greenhouse Gasses
+GHG:: Greenhouse Gases
 IPCC:: Intergovernmental Panel on Climate Change (IPCC) is an
 intergovernmental body of the United Nations that is dedicated to
 providing the world with objective, scientific information relevant to
