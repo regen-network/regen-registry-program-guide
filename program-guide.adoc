@@ -22,7 +22,6 @@ Regen Network Development, PBC (RND) maintains the right to amend or
 depart from any procedure or practice referred to in this guideline as
 deemed necessary.
 
-:sectnums: 
 
 == Introduction
 
