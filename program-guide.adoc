@@ -1943,7 +1943,7 @@ pertains.
 === Verifier Requirements 
 
 . Credit Classes must specify the Verifier Requirements. Examples of
-recommended requirements include: :
+recommended requirements include:
 
     - Verification bodies accredited under ISO 14065 and in good standing with
     their relevant ISO member body.
