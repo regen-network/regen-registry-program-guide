@@ -1,11 +1,13 @@
 const decimalOutlineTreeProcessor = function (document) {
   const orderedLists = document.findBy({ context: "olist" });
+  // CHECK TO MAKE SURE NOT [loweralpha] tag
   orderedLists.forEach((olist) => {
     const parentSection = olist.getParent();
     if (
       parentSection &&
       parentSection.context === "section" &&
-      parentSection.isNumbered()
+      parentSection.isNumbered() &&
+      olist.getStyle() == "arabic"
     ) {
       olist.setAttribute("list-type", "decimal-outline");
       olist.getItems().forEach((item, index) => {
