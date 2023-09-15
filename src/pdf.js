@@ -1,27 +1,14 @@
 const asciidoctor = require("asciidoctor")();
 const DocumentConverter = require("asciidoctor-pdf/lib/document/document-converter");
+const {
+  decimalOutlineTreeProcessor,
+  convertDecimalOutlineNode,
+} = require("./decimal-outline");
 
 // Custom tree processor
 asciidoctor.Extensions.register(function () {
   this.treeProcessor(function () {
-    this.process(function (document) {
-      const orderedLists = document.findBy({ context: "olist" });
-      orderedLists.forEach((olist) => {
-        const parentSection = olist.getParent();
-        if (
-          parentSection &&
-          parentSection.context === "section" &&
-          parentSection.isNumbered()
-        ) {
-          olist.getItems().forEach((item, index) => {
-            item.setAttribute(
-              "custom-number",
-              `${parentSection.getSectionNumber()}${index + 1}`
-            );
-          });
-        }
-      });
-    });
+    this.process(decimalOutlineTreeProcessor);
   });
 });
 
@@ -54,16 +41,8 @@ class CustomConverter {
   }
 
   convert(node, transform) {
-    if (node.getNodeName() === "olist") {
-      return `<ol class="decimal-outline">${node
-        .getItems()
-        .map(
-          (item) =>
-            `<li data-custom-number="${item.getAttribute(
-              "custom-number"
-            )}">${item.getText()}</li>`
-        )
-        .join("")}</ol>`;
+    if (node.getAttribute("list-type") === "decimal-outline") {
+      return convertDecimalOutlineNode(node);
     }
     return this.baseConverter.convert(node, transform); // By default call the built-in HTML5 converter
   }

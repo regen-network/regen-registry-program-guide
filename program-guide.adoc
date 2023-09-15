@@ -1696,8 +1696,8 @@ monitoring event during the Crediting Term.
 Proponents are still contractually obligated to maintain the permanence
 requirements for each credit vintage sold.
 
-. Regen Registry will follow the same approach at the end of permanence
-period for carbon stock reconciliation - see section 8.7.3.
+. Regen Registry will follow the same approach as the end of permanence
+period for carbon stock reconciliation - see Section 10.6.3 (<<End of Permanence Period>>).
 
 . If no monitoring and verification report was conducted at the end of the
 permanence period, in order to be conservative, the Credit Class Admin
@@ -1943,7 +1943,7 @@ pertains.
 === Verifier Requirements 
 
 . Credit Classes must specify the Verifier Requirements. Examples of
-recommended requirements include: :
+recommended requirements include:
 
     - Verification bodies accredited under ISO 14065 and in good standing with
     their relevant ISO member body.
